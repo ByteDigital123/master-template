@@ -13,19 +13,27 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::group(['prefix' => 'auth'], function () {
-    Route::post('admin-users/login', 'Auth\Admin\LoginController@login');
+
+Route::group(['prefix' => 'auth'], function (){
+    // Authentication Routes...
+    Route::get('login', 'Auth\Api\LoginController@showLoginForm');
+    Route::post('login', 'Auth\Api\LoginController@login');
+    Route::post('logout', 'Auth\Api\LoginController@logout');
+    // Password Reset Routes...
+    Route::post('password/email', 'Auth\Api\ForgotPasswordController@sendResetLinkEmail');
+    Route::get('password/reset', 'Auth\Api\ForgotPasswordController@showLinkRequestForm');
+    Route::post('password/reset', 'Auth\Api\ResetPasswordController@reset');
+    Route::get('password/reset/{token}', 'Auth\Api\ResetPasswordController@showResetForm');
+    // Registration Routes...
+    Route::get('register', 'Auth\Api\RegisterController@showRegistrationForm');
 });
 
-// ADMIN ROUTES
-Route::group(['middleware' => 'auth:admin_api'], function () {
+Route::get('/home', 'HomeController@index')->name('home');
 
-    // Admin
-    Route::get('admin-users/current', 'Api\AdminUserController@currentUser');
-    Route::get('admin-users', 'Api\AdminUserController@index');
-    Route::get('admin-users/{admin}', 'Api\AdminUserController@show');
-    Route::post('admin-users', 'Api\AdminUserController@store');
-    Route::delete('admin-users/', 'Api\AdminUserController@destroy');
-    Route::put('admin-users/{admin}', 'Api\AdminUserController@update');
 
+
+
+Route::get('testing', function (){
+    dd(Auth::user());
 });
+

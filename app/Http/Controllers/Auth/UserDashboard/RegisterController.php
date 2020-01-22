@@ -2,17 +2,12 @@
 
 namespace App\Http\Controllers\Auth\UserDashboard;
 
-use App\User;
-use App\UserType;
-use App\AdminUser;
-use App\UserCheck;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
-use App\Notifications\User\WelcomeMessage;
+use App\Providers\RouteServiceProvider;
+use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use App\Notifications\Admin\RegisterConfirmation;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
@@ -28,6 +23,13 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+
+    /**
+     * Where to redirect users after registration.
+     *
+     * @var string
+     */
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -48,10 +50,9 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'first_name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
 
@@ -61,58 +62,12 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(Request $request)
+    protected function create(array $data)
     {
-        $data = $request->all();
-
-
-        $this->validate($request, [
-            'password' => 'min:6',
-            'password_confirmation' => 'same:password',
-        ]);
-
-        $user = User::create([
-            'title_id' => $data['title']['id'],
-            'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
+        return User::create([
+            'name' => $data['name'],
             'email' => $data['email'],
-            'phone_number' => $data['phone_number'],
-            'password' => bcrypt($data['password_confirmation']),
+            'password' => Hash::make($data['password']),
         ]);
-
-        return response()->success('User has been created');
-    }
-
-    protected function createRandomPassword()
-    {
-        $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-        $pass = []; //remember to declare $pass as an array
-        $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
-        for ($i = 0; $i < 8; $i++) {
-            $n = rand(0, $alphaLength);
-            $pass[] = $alphabet[$n];
-        }
-        return implode($pass); //turn the array into a string
-    }
-
-
-    /**
-     * Register api
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function register(Request $request)
-    {
-        $data = $request->all();
-
-        $validator = $this->validator($data);
-
-        if ($validator->fails()) {
-            return response()->json(['error' => $validator->errors()], 401);
-        }
-
-        $user = $this->create($data);
-
-        return response()->success('User has been registered');
     }
 }

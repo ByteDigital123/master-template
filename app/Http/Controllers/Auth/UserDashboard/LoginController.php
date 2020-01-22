@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers\Auth\UserDashboard;
 
-use Illuminate\Http\Request;
+use Auth;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\ValidationException;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use App\Http\Requests\Auth\LoginRequest;
-use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -30,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -43,19 +41,6 @@ class LoginController extends Controller
     }
 
     /**
-     * login api
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function login(LoginRequest $request){
-        if ($this->attemptLogin($request)) {
-            return $this->sendLoginResponse($request);
-        }
-
-        return response()->error('Invalid email or password', 401);
-    }
-
-    /**
      * Send the response after the user was authenticated.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -63,42 +48,29 @@ class LoginController extends Controller
      */
     protected function sendLoginResponse(Request $request)
     {
-        $user = $this->guard()->getLastAttempted();
+        $request->session()->regenerate();
 
-         if($user->user_authorised){
-             $success['token'] =  $user->createToken('nucleus')->accessToken;
+        $this->clearLoginAttempts($request);
 
-             return response()->json(['success' => $success], 200);
-         }else{
-             return response()->json(['error' => 'Your account is currently undergoing verification, Once verified you will receive a confirmation email at which point you will have full access to your dashboard.', 'error_type' => 'info'], 401);
-         }
-
+        return $this->authenticated($request, $this->guard()->user())
+            ?: response()->json(['success' => 'You are now logged In as a user'], 200);
     }
 
-
     /**
-     * Get the failed login response instance.
+     * Log the user out of the application.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Symfony\Component\HttpFoundation\Response
-     *
-     * @throws ValidationException
+     * @return \Illuminate\Http\Response
      */
-    protected function sendFailedLoginResponse(Request $request)
+    public function logout(Request $request)
     {
-        throw ValidationException::withMessages([
-            $this->username() => [trans('auth.failed')],
-        ]);
-    }
+        $this->guard()->logout();
 
-    /**
-     * Get the guard to be used during authentication.
-     *
-     * @return \Illuminate\Contracts\Auth\StatefulGuard
-     */
-    protected function guard()
-    {
-        return Auth::guard('user');
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return $this->loggedOut($request) ?: response()->json(['success' => 'You are now logged out from user'], 200);
     }
 
 }
