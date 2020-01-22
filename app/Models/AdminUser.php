@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class AdminUser extends Authenticatable
 {
-    use HasRoles, HasApiTokens, Notifiable;
+    use HasRoles, Notifiable;
 
     protected $guard = 'api';
 

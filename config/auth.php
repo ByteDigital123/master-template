@@ -36,20 +36,9 @@ return [
     */
 
     'guards' => [
-        'user_api' => [
-            'driver' => 'passport',
-            'provider' => 'user',
-        ],
-
         'user' => [
             'driver' => 'session',
             'provider' => 'user',
-        ],
-
-
-        'admin_api' => [
-            'driver' => 'passport',
-            'provider' => 'admin',
         ],
 
         'admin' => [
