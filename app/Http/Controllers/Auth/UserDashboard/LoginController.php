@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth\UserDashboard;
 
+use App\Http\Requests\Auth\LoginRequest;
 use Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -38,6 +39,20 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    /**
+     * login api
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function login(Request $request)
+    {
+        if ($this->attemptLogin($request)) {
+            return $this->sendLoginResponse($request);
+        }
+
+        return response()->error('Invalid username or password', 500);
     }
 
     /**

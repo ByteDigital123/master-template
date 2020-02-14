@@ -11,10 +11,9 @@
 |
 */
 
-// ADMIN ROUTES
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => 'auth:web'], function () {
 
-
+    // PUT ALL USER DASHBOARD ROUTES IN HERE BASTARD
 
 });
 

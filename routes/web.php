@@ -12,25 +12,19 @@
 */
 
 
-Route::group(['prefix' => 'auth', 'middleware' => 'api'], function (){
+Route::group(['prefix' => 'auth'], function (){
     // Authentication Routes...
-    Route::get('login', 'Auth\UserDashboard\LoginController@showLoginForm');
     Route::post('login', 'Auth\UserDashboard\LoginController@login');
     Route::post('logout', 'Auth\UserDashboard\LoginController@logout');
     // Password Reset Routes...
-    Route::post('password/email', 'Auth\UserDashboard\ForgotPasswordController@sendResetLinkEmail');
-    Route::get('password/reset', 'Auth\UserDashboard\ForgotPasswordController@showLinkRequestForm');
     Route::post('password/reset', 'Auth\UserDashboard\ResetPasswordController@reset');
     Route::get('password/reset/{token}', 'Auth\UserDashboard\ResetPasswordController@showResetForm');
     // Registration Routes...
-    Route::get('register', 'Auth\UserDashboard\RegisterController@showRegistrationForm');
+    Route::post('register/{token?}', 'Auth\UserDashboard\RegisterController@store');
+
+    // Email Verification...
+    Route::get('email-verification/{token}', 'Website\UserController@verifyEmailAddress');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 
-
-
-Route::get('testing', function (){
-     dd(Auth::user());
-});

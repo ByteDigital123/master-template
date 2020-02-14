@@ -2,15 +2,12 @@
 
 namespace App\Repositories\AdminUser;
 
-use App\AdminUser;
+use App\Models\AdminUser;
 use App\Http\Resources\UserResource;
 use App\Repositories\BaseRepository;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use App\Repositories\AdminUser\AdminUserInterface as UserInterface;
-use App\Jobs\SendUserDetails;
-
-use App\Mail\SendNewUserDetails;
 
 class EloquentAdminUserRepository extends BaseRepository implements AdminUserInterface
 {
@@ -36,15 +33,13 @@ class EloquentAdminUserRepository extends BaseRepository implements AdminUserInt
                 'first_name' => $attributes['first_name'],
                 'last_name' => $attributes['last_name'],
                 'email' => $attributes['email'],
-                'password' => $attributes['password'],
-                'profile_picture' => isset($attributes['profile_picture']) ? $attributes['profile_picture'] : NULL,
-                'company_id' => isset($attributes['company']) ? $attributes['company']['id'] : NULL                
+                'password' => $attributes['password']
             ]);
 
             $user->syncRoles($attributes['role']['id']);            
 
-        } catch(Exception $e){
-            return response()->error($e->message);
+        } catch(\Exception $e){
+            return response()->error($e->getMessage());
         }
 
         return response()->success('Your record has been created');
@@ -69,14 +64,14 @@ class EloquentAdminUserRepository extends BaseRepository implements AdminUserInt
               $user->save();
           }
 
-        } catch(Exception $e){
-            return response()->error($e->message);
+        } catch(\Exception $e){
+            return response()->error($e->getMessage());
         }
 
         try {
-            $user->syncRoles($attributes['role']['id']);            
-        } catch(Exception $e){
-            return response()->error($e->message);
+            $user->syncRoles($attributes['role']['id']);
+        } catch(\Exception $e){
+            return response()->error($e->getMessage());
         }
 
 

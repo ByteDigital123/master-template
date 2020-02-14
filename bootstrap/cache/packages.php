@@ -1,4 +1,11 @@
 <?php return array (
+  'appstract/laravel-response-macros' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Appstract\\ResponseMacros\\ResponseMacrosServiceProvider',
+    ),
+  ),
   'bytedigital123/scaffold' => 
   array (
     'providers' => 
@@ -61,6 +68,28 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'orangehill/iseed' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Orangehill\\Iseed\\IseedServiceProvider',
+    ),
+  ),
+  'oscarafdev/migrations-generator' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Way\\Generators\\GeneratorsServiceProvider',
+      1 => 'OscarAFDev\\MigrationsGenerator\\MigrationsGeneratorServiceProvider',
+    ),
+  ),
+  'pursehouse/modeler-laravel-eloquent' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Pursehouse\\Modeler\\Coders\\CodersServiceProvider',
     ),
   ),
   'spatie/laravel-permission' => 

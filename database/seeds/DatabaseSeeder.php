@@ -11,6 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        \Illuminate\Support\Facades\Artisan::call('migrate:fresh');
+        $this->call(CountriesTableSeeder::class);
+        $this->call(AdminUsersTableSeeder::class);
+        $this->call(RolesAndPermissionsSeeder::class);
     }
 }

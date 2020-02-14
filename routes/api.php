@@ -16,7 +16,6 @@ use Illuminate\Http\Request;
 
 Route::group(['prefix' => 'auth'], function (){
     // Authentication Routes...
-    Route::get('login', 'Auth\Api\LoginController@showLoginForm');
     Route::post('login', 'Auth\Api\LoginController@login');
     Route::post('logout', 'Auth\Api\LoginController@logout');
     // Password Reset Routes...
@@ -25,15 +24,15 @@ Route::group(['prefix' => 'auth'], function (){
     Route::post('password/reset', 'Auth\Api\ResetPasswordController@reset');
     Route::get('password/reset/{token}', 'Auth\Api\ResetPasswordController@showResetForm');
     // Registration Routes...
-    Route::get('register', 'Auth\Api\RegisterController@showRegistrationForm');
+    Route::post('register', 'Auth\Api\RegisterController@store');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::group(['middleware' => 'auth:api'], function () {
 
+        // PUT ALL ADMIN ROUTES IN HERE BASTARD
 
-
-Route::get('testing', function (){
-    dd(Auth::user());
 });
+
 

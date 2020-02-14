@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Repositories\Address;
+
+
+use Illuminate\Support\ServiceProvider;
+
+
+class AddressServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        
+    }
+
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->bind('App\Repositories\Address\AddressInterface', 'App\Repositories\Address\EloquentAddressRepository');
+    }
+}

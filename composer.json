@@ -9,12 +9,16 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "appstract/laravel-response-macros": "^1.0",
         "bytedigital123/scaffold": "dev-master",
         "fideloper/proxy": "^4.0",
         "laravel/airlock": "^0.1.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^1.1",
+        "orangehill/iseed": "^2.6",
+        "oscarafdev/migrations-generator": "2.0.13",
+        "pursehouse/modeler-laravel-eloquent": "dev-master",
         "spatie/laravel-permission": "^3.6",
         "spatie/laravel-responsecache": "^6.3"
     },
