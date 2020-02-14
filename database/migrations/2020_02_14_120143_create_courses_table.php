@@ -16,11 +16,11 @@ class CreateCoursesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('provider_id')->unsigned()->index('courses_distributor_fk_idx');
-			$table->string('title', 45);
+			$table->string('title');
 			$table->integer('provider_price')->unsigned();
 			$table->integer('retail_price');
-			$table->text('description', 65535);
-			$table->string('excerpt', 140);
+			$table->text('description');
+			$table->string('excerpt');
 			$table->integer('duration');
 			$table->string('main_image')->nullable();
 			$table->string('provider_reference_id');

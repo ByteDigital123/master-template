@@ -15,5 +15,12 @@ class DatabaseSeeder extends Seeder
         $this->call(CountriesTableSeeder::class);
         $this->call(AdminUsersTableSeeder::class);
         $this->call(RolesAndPermissionsSeeder::class);
+        $this->call(ContactFormsTableSeeder::class);
+        $this->call(TransactionStatusesTableSeeder::class);
+        $this->call(ProvidersTableSeeder::class);
+        $this->call(CategoriesTableSeeder::class);
+        $this->call(CoursesTableSeeder::class);
+        $this->call(TransactionsTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
     }
 }

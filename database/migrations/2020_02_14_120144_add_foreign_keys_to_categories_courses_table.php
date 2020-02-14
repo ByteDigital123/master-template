@@ -14,7 +14,7 @@ class AddForeignKeysToCategoriesCoursesTable extends Migration {
 	{
 		Schema::table('categories_courses', function(Blueprint $table)
 		{
-			$table->foreign('category_id', 'categories_courses_category_fk')->references('id')->on('category')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+			$table->foreign('category_id', 'categories_courses_category_fk')->references('id')->on('categories')->onUpdate('NO ACTION')->onDelete('NO ACTION');
 			$table->foreign('course_id', 'categories_courses_courses')->references('id')->on('courses')->onUpdate('NO ACTION')->onDelete('NO ACTION');
 		});
 	}
