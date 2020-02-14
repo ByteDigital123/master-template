@@ -1,31 +1,36 @@
 <?php
 
+/**
+ * Generated file
+ */
+
 namespace App\Models;
 
-use Laravel\Airlock\HasApiTokens;
-use Spatie\Permission\Traits\HasRoles;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class AdminUser extends Authenticatable
+
+/**
+ * Class AdminUser
+ * 
+ * @property int $id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $email
+ * @property string $password
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ *
+ * @package App\Models
+ */
+class AdminUser extends \Illuminate\Database\Eloquent\Model
 {
-    use HasRoles, HasApiTokens, Notifiable;
+	protected $hidden = [
+		'password'
+	];
 
-    protected $guard_name = 'api';
-
-    protected $fillable = [
-        'first_name',
-        'last_name',
-        'email',
-        'password',
-        'active',
-    ];
-
-    protected $casts = [
-        'status' => 'boolean',
-    ];
-
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+	protected $fillable = [
+		'first_name',
+		'last_name',
+		'email',
+		'password'
+	];
 }

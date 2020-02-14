@@ -6,7 +6,6 @@ interface AddressInterface {
     public function all();
 	public function count();
 	public function create(array $data);
-	public function store($address_line_one, $address_line_two, $city, $county, $postcode);
 	public function createMultiple(array $data);
 	public function delete();
 	public function deleteById($id);

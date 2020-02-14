@@ -20,7 +20,7 @@ class CountryService
      */
     public function getAll()
     {
-        return $this->model->paginate(config('site.pagination'));
+        return $this->model->paginate(config('swell.pagination'));
     }
 
     /**
@@ -45,7 +45,7 @@ class CountryService
     {
         return $this->model->where($column, $from_date, '>')
                            ->where($column, $to_date, '<')
-                           ->paginate(config('site.pagination'));
+                           ->paginate(config('swell.pagination'));
     }
 
     /**

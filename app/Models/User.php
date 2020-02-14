@@ -1,40 +1,40 @@
 <?php
 
+/**
+ * Generated file
+ */
+
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Airlock\HasApiTokens;
 
-class User extends Authenticatable
+
+/**
+ * Class User
+ * 
+ * @property int $id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $username
+ * @property string $email
+ * @property string $telephone
+ * @property string $api_token
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ *
+ * @package App\Models
+ */
+class User extends \Illuminate\Database\Eloquent\Model
 {
-    use HasApiTokens, Notifiable;
+	protected $hidden = [
+		'api_token'
+	];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+	protected $fillable = [
+		'first_name',
+		'last_name',
+		'username',
+		'email',
+		'telephone',
+		'api_token'
+	];
 }

@@ -165,6 +165,31 @@ return [
         /*
          * Package Service Providers...
          */
+        App\Providers\Laravel\AddressServiceProvider::class,
+        App\Providers\Laravel\CategoriesCourseServiceProvider::class,
+        App\Providers\Laravel\CategoryServiceProvider::class,
+        App\Providers\Laravel\ContactFormServiceProvider::class,
+        App\Providers\Laravel\CountryServiceProvider::class,
+        App\Providers\Laravel\CourseServiceProvider::class,
+        App\Providers\Laravel\ModelHasPermissionServiceProvider::class,
+        App\Providers\Laravel\ModelHasRoleServiceProvider::class,
+        App\Providers\Laravel\PermissionGroupServiceProvider::class,
+        App\Providers\Laravel\ProviderServiceProvider::class,
+        App\Providers\Laravel\TransactionServiceProvider::class,
+        App\Providers\Laravel\TransactionStatusServiceProvider::class,
+        App\Repositories\Address\AddressServiceProvider::class,
+        App\Repositories\CategoriesCourse\CategoriesCourseServiceProvider::class,
+        App\Repositories\Category\CategoryServiceProvider::class,
+        App\Repositories\ContactForm\ContactFormServiceProvider::class,
+        App\Repositories\Country\CountryServiceProvider::class,
+        App\Repositories\Course\CourseServiceProvider::class,
+        App\Repositories\ModelHasPermission\ModelHasPermissionServiceProvider::class,
+        App\Repositories\ModelHasRole\ModelHasRoleServiceProvider::class,
+        App\Repositories\PermissionGroup\PermissionGroupServiceProvider::class,
+        App\Repositories\Provider\ProviderServiceProvider::class,
+        App\Repositories\Transaction\TransactionServiceProvider::class,
+        App\Repositories\TransactionStatus\TransactionStatusServiceProvider::class,
+
 
         /*
          * Application Service Providers...
