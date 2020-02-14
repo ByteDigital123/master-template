@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e230edaa2950d9960381b1190004037",
+    "content-hash": "2cc45d375015551ef8a887b125eca5db",
     "packages": [
         {
             "name": "appstract/laravel-response-macros",
@@ -1633,16 +1633,16 @@
         },
         {
             "name": "oscarafdev/migrations-generator",
-            "version": "v2.0.13",
+            "version": "v2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarafdev/migrations-generator.git",
-                "reference": "ea9945c1f50504939a3e899b1f40d21d7bc90288"
+                "reference": "27daedbf61a2359dd8004ce194320de5bbee73dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarafdev/migrations-generator/zipball/ea9945c1f50504939a3e899b1f40d21d7bc90288",
-                "reference": "ea9945c1f50504939a3e899b1f40d21d7bc90288",
+                "url": "https://api.github.com/repos/oscarafdev/migrations-generator/zipball/27daedbf61a2359dd8004ce194320de5bbee73dd",
+                "reference": "27daedbf61a2359dd8004ce194320de5bbee73dd",
                 "shasum": ""
             },
             "require": {
@@ -1689,7 +1689,7 @@
                 "migration",
                 "migrations"
             ],
-            "time": "2019-12-10T19:21:46+00:00"
+            "time": "2020-02-08T13:57:22+00:00"
         },
         {
             "name": "paragonie/random_compat",
