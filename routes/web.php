@@ -12,6 +12,8 @@
 */
 
 
+use App\Services\VideoTileService;
+
 Route::group(['prefix' => 'auth'], function (){
     // Authentication Routes...
     Route::post('login', 'Auth\UserDashboard\LoginController@login');
@@ -42,5 +44,14 @@ Route::get('/courses/{id}', 'Website\CourseController@show');
 Route::post('/purchase', 'Website\CourseController@purchase');
 
 Route::post('/course/search', 'Website\CourseController@searchCourse');
+
+
+
+Route::post('test', function (\Illuminate\Http\Request $request){
+    $attributes = $request->all();
+    $client = (new VideoTileService());
+    $user = $client->createUser($attributes['first_name'], $attributes['last_name'], $attributes['email'], $attributes['telephone']);
+    dd(json_decode($user, true));
+});
 
 

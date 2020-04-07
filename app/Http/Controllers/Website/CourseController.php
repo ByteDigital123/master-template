@@ -16,6 +16,7 @@ use App\Services\CourseService;
 use App\Services\SagePaymentGateway;
 use App\Services\TransactionService;
 use App\Services\UserService;
+use App\Services\VideoTileService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -103,6 +104,26 @@ class CourseController extends Controller
                 'transaction_reference_id' => $payment->transactionId,
                 'provider_user_id' => $course->provider->name,
             ]);
+
+//            if($course->provider->name == 'VideoTile'){
+//                // Check if user
+//
+//                // CREATE CLIENT
+//                $client = (new VideoTileService());
+//
+//                // CREATE USER
+//                $user = json_decode($client->createUser($attributes['first_name'], $attributes['last_name'], $attributes['email'], $attributes['telephone']), true);
+//
+//
+//                // UPDATE USER ON CPD
+//
+//
+//                // ASSIGN USER TO COURSE
+//
+//
+//
+//
+//            }
 
             // Send notification
             $admin = AdminUser::find(1);

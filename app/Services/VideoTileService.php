@@ -303,7 +303,7 @@ class VideoTileService
 
             $response = $this->_client->request($verb, ($this->_endpoint . '/' . $resource), $parameters);
 
-            return $response->getBody();
+            return $response->getBody()->getContents();
         } catch (RequestException $e) {
             echo Psr7\str($e->getRequest());
 

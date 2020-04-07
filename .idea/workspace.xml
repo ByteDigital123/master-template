@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42720b84-48a2-492a-9f97-b392424ab08e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryCoursesResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Website/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Website/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Website/Course/NavigationCourseResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Website/Course/NavigationCourseResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/CourseService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/CourseService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/VideoTileService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/VideoTileService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +34,7 @@
           <entry key="env" value="4" />
           <entry key="example" value="1" />
           <entry key="json" value="8" />
-          <entry key="php" value="403" />
+          <entry key="php" value="406" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -52,7 +42,7 @@
           <entry key=".env file" value="4" />
           <entry key="Blade" value="3" />
           <entry key="JSON" value="8" />
-          <entry key="PHP" value="400" />
+          <entry key="PHP" value="403" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -62,7 +52,7 @@
           <entry key="env" value="54" />
           <entry key="example" value="18" />
           <entry key="json" value="3" />
-          <entry key="php" value="9746" />
+          <entry key="php" value="10082" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -70,76 +60,88 @@
           <entry key=".env file" value="54" />
           <entry key="Blade" value="50" />
           <entry key="JSON" value="3" />
-          <entry key="PHP" value="9696" />
+          <entry key="PHP" value="10032" />
           <entry key="PLAIN_TEXT" value="33" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="124" column="54" selection-start-line="124" selection-start-column="54" selection-end-line="124" selection-end-column="54" />
-              <folding>
-                <element signature="e#48#84#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchClass.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-              <folding>
-                <element signature="e#41#75#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.57378274">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="458">
+                  <caret line="125" column="15" lean-forward="true" selection-start-line="107" selection-start-column="14" selection-end-line="125" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#48#84#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Services/VideoTileService.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="177">
+                  <caret line="175" column="30" selection-start-line="175" selection-start-column="20" selection-end-line="175" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="205">
+                  <caret line="33" column="72" lean-forward="true" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="660">
+                  <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#41#75#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/routes/web.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="474">
+                  <caret line="53" column="3" lean-forward="true" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Services/VideoTileService.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="286" column="7" selection-start-line="286" selection-start-column="7" selection-end-line="286" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -216,7 +218,6 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/Api/Course/StoreCourseRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Api/Course/UpdateCourseRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CourseController.php" />
-        <option value="$PROJECT_DIR$/app/Services/VideoTileService.php" />
         <option value="$PROJECT_DIR$/app/Repositories/AdminUser/EloquentAdminUserRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminUserController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/ContactForm/EloquentContactFormRepository.php" />
@@ -244,14 +245,15 @@
         <option value="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Website/Course/NavigationCourseResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Website/CategoryController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php" />
         <option value="$PROJECT_DIR$/app/Services/CourseService.php" />
         <option value="$PROJECT_DIR$/app/Models/Course.php" />
         <option value="$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php" />
+        <option value="$PROJECT_DIR$/app/Services/VideoTileService.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php" />
       </list>
     </option>
   </component>
@@ -384,9 +386,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="2" />
-    <option name="y" value="173" />
+    <option name="y" value="117" />
     <option name="width" value="1639" />
-    <option name="height" value="836" />
+    <option name="height" value="892" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -441,7 +443,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="SearchFilters" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cpd" type="b2602c69:ProjectViewProjectNode" />
@@ -449,14 +451,8 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="SearchFilters" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpd" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="Course" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cpd" type="b2602c69:ProjectViewProjectNode" />
@@ -476,6 +472,11 @@
               <item name="cpd" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpd" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cpd" type="b2602c69:ProjectViewProjectNode" />
@@ -535,12 +536,12 @@
       <workItem from="1582877675448" duration="25781000" />
       <workItem from="1584003319756" duration="16051000" />
       <workItem from="1585921576627" duration="1470000" />
-      <workItem from="1586244930569" duration="6072000" />
+      <workItem from="1586244930569" duration="9416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89316000" />
+    <option name="totallyTimeSpent" value="92660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,10 +553,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="173" width="1639" height="836" extended-state="0" />
+    <frame x="2" y="117" width="1639" height="892" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.26487163" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.16405761" />
       <window_info id="Structure" order="1" sideWeight="0.5009141" side_tool="true" weight="0.230658" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -569,7 +570,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tinkerwell" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.41935483" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.16125" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -626,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/VideoTileService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1138">
-          <caret line="294" column="5" selection-start-line="294" selection-start-column="5" selection-end-line="294" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -865,50 +859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchClass.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding>
-            <element signature="e#41#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="124" column="54" selection-start-line="124" selection-start-column="54" selection-end-line="124" selection-end-column="54" />
-          <folding>
-            <element signature="e#48#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -943,10 +897,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchClass.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding>
+            <element signature="e#41#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="205">
+          <caret line="33" column="72" lean-forward="true" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/VideoTileService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="175" column="30" selection-start-line="175" selection-start-column="20" selection-end-line="175" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="53" column="3" lean-forward="true" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="125" column="15" lean-forward="true" selection-start-line="107" selection-start-column="14" selection-end-line="125" selection-end-column="15" />
+          <folding>
+            <element signature="e#48#84#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
