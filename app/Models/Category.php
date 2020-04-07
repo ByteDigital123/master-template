@@ -22,14 +22,15 @@ namespace App\Models;
  */
 class Category extends \Illuminate\Database\Eloquent\Model
 {
-	protected $table = 'category';
+	protected $table = 'categories';
 
 	protected $fillable = [
-		'name'
+		'name',
+        'slug'
 	];
 
-	public function categories_courses()
+	public function courses()
 	{
-		return $this->hasMany(\App\Models\CategoriesCourse::class);
+		return $this->belongsToMany(\App\Models\Course::class, 'categories_courses', 'category_id', 'course_id');
 	}
 }

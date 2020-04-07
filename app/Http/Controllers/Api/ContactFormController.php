@@ -10,6 +10,7 @@ use App\Http\SearchFilters\Api\ContactForm\ContactFormSearch;
 use App\Models\ContactForm;
 use App\Services\ContactFormService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class ContactFormController extends Controller
 {
@@ -31,21 +32,6 @@ class ContactFormController extends Controller
         $this->authorize('list', ContactForm::class);
         return ContactFormResource::collection(ContactFormSearch::apply($request));
 
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreContactFormRequest $request)
-    {
-        $this->authorize('create', ContactForm::class);
-
-        $attributes = $request->all();
-
-        return $this->service->create($attributes);
     }
 
     /**
@@ -73,7 +59,13 @@ class ContactFormController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->update($id, $attributes);
+        try{
+            $this->service->update($id, $attributes);
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
     }
 
     /**
@@ -88,7 +80,13 @@ class ContactFormController extends Controller
 
         $attributes = $request->json()->all();
 
-        return $this->service->delete($attributes);
+        try{
+            $this->service->destroy($attributes);
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
     }
 
 }

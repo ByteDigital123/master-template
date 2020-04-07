@@ -3,7 +3,7 @@
 namespace App\Http\SearchFilters\Api\Provider;
 
 use App\Models\Provider;
-use App\SearchFilters\ApiSearchableTrait;
+use App\Http\SearchFilters\ApiSearchableTrait;
 
 class ProviderSearch
 {

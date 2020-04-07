@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ModelHasRole\StoreModelHasRoleRequest;
-use App\Http\Requests\ModelHasRole\UpdateModelHasRoleRequest;
-use App\Http\Resources\ModelHasRole\ModelHasRoleResource;
+use App\Http\Requests\Website\ModelHasRole\StoreModelHasRoleRequest;
+use App\Http\Requests\Website\ModelHasRole\UpdateModelHasRoleRequest;
+use App\Http\Resources\Website\ModelHasRole\ModelHasRoleResource;
 use App\Services\ModelHasRoleService;
 use Illuminate\Http\Request;
 

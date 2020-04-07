@@ -2,6 +2,8 @@
 
 namespace App\Http\Resources\Website\Category;
 
+use App\Http\Resources\Website\Course\CourseResource;
+use App\Http\Resources\Website\Course\NavigationCourseResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class CategoryResource extends JsonResource
@@ -13,7 +15,14 @@ class CategoryResource extends JsonResource
      * @return array
      */
     public function toArray($request)
-    {
-        return parent::toArray($request);
+    {;
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'slug' => $this->slug,
+            'courses' => [
+                NavigationCourseResource::collection($this->courses)
+            ]
+        ];
     }
 }

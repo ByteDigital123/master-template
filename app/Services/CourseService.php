@@ -35,6 +35,17 @@ class CourseService
     }
 
     /**
+     * get a single row of data
+     *
+     * @param integer $id
+     * @return collection
+     */
+    public function getFeatured()
+    {
+        return $this->model->where('featured', true)->get();
+    }
+
+    /**
      * return the data between specific dates
      *
      * @param date $from_date

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Provider\StoreProviderRequest;
-use App\Http\Requests\Provider\UpdateProviderRequest;
-use App\Http\Resources\Provider\ProviderResource;
+use App\Http\Requests\Website\Provider\StoreProviderRequest;
+use App\Http\Requests\Website\Provider\UpdateProviderRequest;
+use App\Http\Resources\Website\Provider\ProviderResource;
 use App\Services\ProviderService;
 use Illuminate\Http\Request;
 

@@ -3,11 +3,12 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ContactForm\StoreContactFormRequest;
-use App\Http\Requests\ContactForm\UpdateContactFormRequest;
-use App\Http\Resources\ContactForm\ContactFormResource;
+use App\Http\Requests\Website\ContactForm\StoreContactFormRequest;
+use App\Http\Requests\Website\ContactForm\UpdateContactFormRequest;
+use App\Http\Resources\Website\ContactForm\ContactFormResource;
 use App\Services\ContactFormService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class ContactFormController extends Controller
 {
@@ -38,7 +39,13 @@ class ContactFormController extends Controller
     {
         $attributes = $request->all();
 
-        return $this->service->store($attributes);
+        try{
+            $this->service->store($attributes);
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
     }
 
     /**

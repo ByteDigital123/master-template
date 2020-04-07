@@ -3,7 +3,7 @@
 namespace App\Http\SearchFilters\Website\ContactForm;
 
 use App\Models\ContactForm;
-use App\SearchFilters\ApiSearchableTrait;
+use App\Http\SearchFilters\ApiSearchableTrait;
 
 class ContactFormSearch
 {

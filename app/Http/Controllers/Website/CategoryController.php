@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Category\StoreCategoryRequest;
-use App\Http\Requests\Category\UpdateCategoryRequest;
-use App\Http\Resources\Category\CategoryResource;
+use App\Http\Requests\Website\Category\StoreCategoryRequest;
+use App\Http\Requests\Website\Category\UpdateCategoryRequest;
+use App\Http\Resources\Website\Category\CategoryResource;
 use App\Services\CategoryService;
 use Illuminate\Http\Request;
 
@@ -25,7 +25,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return CategoryResource::collection($this->service->getAll());
+        return CategoryResource::collection($this->service->get());
     }
 
     /**
@@ -47,9 +47,9 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        return new CategoryResource($this->service->getById($id));
+        return new CategoryResource($this->service->getBySlug($slug));
     }
 
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\Country;
 use App\Repositories\Address\AddressInterface;
 
 class AddressService
@@ -56,7 +57,13 @@ class AddressService
      */
     public function store($attributes)
     {
-        return $this->model->create($attributes);
+        return $this->model->create([
+            'address_line_one' => $attributes['address_line_one'],
+            'city' => $attributes['city'],
+            'postcode' => $attributes['postcode'],
+            'county' => $attributes['county'],
+            'country' => Country::where('name', 'like', '%' .  $attributes['country'] . '%')->first()->id
+        ]);
     }
 
     /**

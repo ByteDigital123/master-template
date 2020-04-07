@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\CategoriesCourse\StoreCategoriesCourseRequest;
-use App\Http\Requests\CategoriesCourse\UpdateCategoriesCourseRequest;
-use App\Http\Resources\CategoriesCourse\CategoriesCourseResource;
+use App\Http\Requests\Website\CategoriesCourse\StoreCategoriesCourseRequest;
+use App\Http\Requests\Website\CategoriesCourse\UpdateCategoriesCourseRequest;
+use App\Http\Resources\Website\CategoriesCourse\CategoriesCourseResource;
 use App\Services\CategoriesCourseService;
 use Illuminate\Http\Request;
 

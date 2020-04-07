@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ModelHasPermission\StoreModelHasPermissionRequest;
-use App\Http\Requests\ModelHasPermission\UpdateModelHasPermissionRequest;
-use App\Http\Resources\ModelHasPermission\ModelHasPermissionResource;
+use App\Http\Requests\Website\ModelHasPermission\StoreModelHasPermissionRequest;
+use App\Http\Requests\Website\ModelHasPermission\UpdateModelHasPermissionRequest;
+use App\Http\Resources\Website\ModelHasPermission\ModelHasPermissionResource;
 use App\Services\ModelHasPermissionService;
 use Illuminate\Http\Request;
 

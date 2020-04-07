@@ -23,6 +23,16 @@ class CategoryService
         return $this->model->paginate(config('swell.pagination'));
     }
 
+    public function get()
+    {
+        return $this->model->with('courses')->get();
+    }
+
+    public function getBySlug($slug)
+    {
+        return $this->model->where('slug', $slug)->with('courses')->first();
+    }
+
     /**
      * get a single row of data
      *

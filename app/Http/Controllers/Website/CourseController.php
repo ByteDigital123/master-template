@@ -3,19 +3,53 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Course\StoreCourseRequest;
-use App\Http\Requests\Course\UpdateCourseRequest;
-use App\Http\Resources\Course\CourseResource;
+use App\Http\Requests\Website\Course\StoreCourseRequest;
+use App\Http\Requests\Website\Course\UpdateCourseRequest;
+use App\Http\Resources\Website\Course\CourseResource;
+use App\Http\Resources\Website\Course\FeaturedCourseResource;
+use App\Models\AdminUser;
+use App\Notifications\Admin\CoursePurchased;
+use App\Repositories\Transaction\TransactionInterface;
+use App\Repositories\TransactionStatus\TransactionStatusInterface;
 use App\Services\CourseService;
+use App\Services\SagePaymentGateway;
+use App\Services\TransactionService;
+use App\Services\UserService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
     protected $service;
+    /**
+     * @var UserService
+     */
+    private $userService;
+    /**
+     * @var SagePaymentGateway
+     */
+    private $gateway;
+    /**
+     * @var TransactionInterface
+     */
+    private $transaction;
+    /**
+     * @var TransactionStatusInterface
+     */
+    private $transactionStatus;
 
-    public function __construct(CourseService $service)
-    {
+    public function __construct(
+        CourseService $service,
+        UserService $userService,
+        SagePaymentGateway $gateway,
+        TransactionInterface $transaction,
+        TransactionStatusInterface $transactionStatus
+    ){
         $this->service = $service;
+        $this->userService = $userService;
+        $this->gateway = $gateway;
+        $this->transaction = $transaction;
+        $this->transactionStatus = $transactionStatus;
     }
 
     /**
@@ -26,6 +60,53 @@ class CourseController extends Controller
     public function index()
     {
         return CourseResource::collection($this->service->getAll());
+    }
+
+    /**
+     * Get featured courses
+     * 
+     * @return FeaturedCourseResource
+     */
+    public function featured()
+    {
+        return new FeaturedCourseResource($this->service->getFeatured());
+    }
+
+    public function purchase(Request $request)
+    {
+        $attributes = $request->all();
+
+        DB::transaction(function() use($attributes) {
+            // Create User
+            $user = $this->userService->store([
+                'first_name' => $attributes['first_name'],
+                'last_name' => $attributes['last_name'],
+                'email' => $attributes['email'],
+                'telephone' => $attributes['telephone'],
+                'username' => $attributes['username'],
+            ]);
+
+            $course = $this->service->getById($attributes['course']['id']);
+
+            // Take Payment
+            $payment = $this->gateway->processTransaction($user, $attributes['card_details'], $attributes['billing'], $attributes['shipping'], $course);
+
+            // Store Transaction
+            $transaction = $this->transaction->create([
+                'status_id' => $this->transactionStatus->where('name', 'Active')->first()->id,
+                'user_id' => $user->id,
+                'name' => $user['first_name'] . ' ' . $user['last_name'] . ' paid for course ' . $course->title,
+                'total' => $course->retail_price,
+                'fee' => 0,
+                'net_amount' => $course->retail_price,
+                'transaction_reference_id' => $payment->transactionId,
+                'provider_user_id' => $course->provider->name,
+            ]);
+
+            // Send notification
+            $admin = AdminUser::find(1);
+            $admin->notify(new CoursePurchased($admin, $user, $course));
+        });
     }
 
     /**

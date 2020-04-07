@@ -8,6 +8,8 @@ namespace App\Models;
 
 
 
+use Illuminate\Support\Str;
+
 /**
  * Class Course
  * 
@@ -35,8 +37,15 @@ class Course extends \Illuminate\Database\Eloquent\Model
 		'provider_id' => 'int',
 		'provider_price' => 'int',
 		'retail_price' => 'int',
-		'duration' => 'int'
+		'duration' => 'int',
+		'featured' => 'bool',
+		'skills_learned' => 'array'
 	];
+
+	protected $hidden = [
+	    'provider_price',
+        'provider_reference_id'
+    ];
 
 	protected $fillable = [
 		'provider_id',
@@ -44,10 +53,12 @@ class Course extends \Illuminate\Database\Eloquent\Model
 		'provider_price',
 		'retail_price',
 		'description',
+        'featured',
 		'excerpt',
 		'duration',
 		'main_image',
-		'provider_reference_id'
+		'provider_reference_id',
+        'slug'
 	];
 
 	public function provider()
@@ -55,8 +66,14 @@ class Course extends \Illuminate\Database\Eloquent\Model
 		return $this->belongsTo(\App\Models\Provider::class);
 	}
 
-	public function categories_courses()
+	public function categories()
 	{
-		return $this->hasMany(\App\Models\CategoriesCourse::class);
+		return $this->belongsToMany(\App\Models\Category::class, 'categories_courses', 'course_id', 'category_id');
 	}
+
+    public function setTitleAttribute($value)
+    {
+        $this->attributes['title'] = $value;
+        $this->attributes['slug'] = Str::slug($value);
+    }
 }

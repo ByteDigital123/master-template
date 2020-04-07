@@ -3,7 +3,7 @@
 namespace App\Http\SearchFilters\Website\ModelHasPermission;
 
 use App\Models\ModelHasPermission;
-use App\SearchFilters\ApiSearchableTrait;
+use App\Http\SearchFilters\ApiSearchableTrait;
 
 class ModelHasPermissionSearch
 {

@@ -28,9 +28,6 @@ namespace App\Models;
  */
 class Address extends \Illuminate\Database\Eloquent\Model
 {
-	protected $casts = [
-		'country_id' => 'int'
-	];
 
 	protected $fillable = [
 		'address_line_one',
@@ -39,13 +36,8 @@ class Address extends \Illuminate\Database\Eloquent\Model
 		'postcode',
         'county',
 		'city',
-		'country_id'
+		'country'
 	];
-
-	public function country()
-	{
-		return $this->belongsTo(\App\Models\Country::class);
-	}
 
 	public function users()
 	{

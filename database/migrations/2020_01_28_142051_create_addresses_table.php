@@ -16,12 +16,12 @@ class CreateAddressesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('address_line_one');
-			$table->string('address_line_two');
+			$table->string('address_line_two')->nullable();
 			$table->string('address_line_three')->nullable();
 			$table->string('county', 45);
 			$table->string('postcode', 45);
 			$table->string('city', 45);
-			$table->integer('country_id')->unsigned()->nullable()->index('addresses_country_fk_idx');
+			$table->string('country')->nullable();
 			$table->dateTime('created_at')->nullable();
 			$table->string('updated_at', 45)->nullable();
 		});

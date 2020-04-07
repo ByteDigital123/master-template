@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Repositories;
-
 use Illuminate\Database\Eloquent\Collection;
-
 abstract class BaseRepository implements BaseRepositoryInterface
 {
     /**
@@ -59,7 +56,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
      *
      * @return \Illuminate\Database\Eloquent\Collection
      */
-
     public function getAll()
     {
         $this->newQuery()->eagerLoad();
@@ -67,7 +63,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->unsetClauses();
         return $models;
     }
-
     public function all()
     {
         $this->newQuery()->eagerLoad();
@@ -75,13 +70,10 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->unsetClauses();
         return $models;
     }
-
     public function groupBy($name)
     {
         return $this->groupBy($name)->get();
     }
-
-
     /**
      * Count the number of specified model records in the database
      *
@@ -91,8 +83,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
     {
         return $this->get()->count();
     }
-
-
     /**
      * Create a new model record in the database
      *
@@ -105,8 +95,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->unsetClauses();
         return $this->model->create($data);
     }
-
-
     /**
      * Create one or more new model records in the database
      *
@@ -122,8 +110,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
         }
         return $models;
     }
-
-
     /**
      * Delete one or more model records from the database
      *
@@ -136,8 +122,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->unsetClauses();
         return $result;
     }
-
-
     /**
      * Delete the specified model record from the database
      *
@@ -151,8 +135,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->unsetClauses();
         return $this->getById($id)->delete();
     }
-
-
     /**
      * Delete multiple records
      *
@@ -164,8 +146,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
     {
         return $this->model->destroy($attributes['id']);
     }
-
-
     /**
      * Get the first specified model record from the database
      *
@@ -178,7 +158,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->unsetClauses();
         return $model;
     }
-
     /**
      * Get all the specified model records in the database
      *
@@ -191,8 +170,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->unsetClauses();
         return $models;
     }
-
-
     /**
      * Get the specified model record from the database
      *
@@ -206,8 +183,6 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->newQuery()->eagerLoad();
         return $this->query->findOrFail($id);
     }
-
-
     /**
      * Set the query limit
      *
@@ -290,8 +265,22 @@ abstract class BaseRepository implements BaseRepositoryInterface
         $this->with = $relations;
         return $this;
     }
+    public function paginate($paginate)
+    {
+        $this->newQuery()->eagerLoad()->setClauses()->setScopes();
+        $models = $this->query->paginate($paginate);
+        $this->unsetClauses();
+        return $models;
+    }
+    public function exists()
+    {
+        $this->newQuery()->eagerLoad()->setClauses()->setScopes();
+        $models = $this->query->exists();
+        $this->unsetClauses();
+        return $models;
+    }
     /**
-     * Create a new instance of the model's query builder
+     * Create a new instance of the models query builder
      *
      * @return $this
      */
@@ -328,7 +317,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
         foreach ($this->orderBys as $orders) {
             $this->query->orderBy($orders['column'], $orders['direction']);
         }
-        if (isset($this->take) and ! is_null($this->take)) {
+        if (isset($this->take) and !is_null($this->take)) {
             $this->query->take($this->take);
         }
         return $this;
@@ -352,10 +341,10 @@ abstract class BaseRepository implements BaseRepositoryInterface
      */
     protected function unsetClauses()
     {
-        $this->wheres   = [];
+        $this->wheres = [];
         $this->whereIns = [];
-        $this->scopes   = [];
-        $this->take     = null;
+        $this->scopes = [];
+        $this->take = null;
         return $this;
     }
 }

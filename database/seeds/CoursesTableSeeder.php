@@ -21,6 +21,13 @@ class CoursesTableSeeder extends Seeder
             'duration' => '75',
             'main_image' => '/images/course.jpg',
             'provider_reference_id' => 'CRS2553DG',
+            'slug' => 'asbestos-awareness-training',
+            'skills_learned' => json_encode([
+                'Learnin 1',
+                'Learnin 2',
+                'Learnin 3',
+                'Learnin 4',
+            ])
         ]);
     }
 }

@@ -1,7 +1,9 @@
 <?php
 namespace App\Http\SearchFilters;
+
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
+
 trait ApiSearchableTrait
 {
     public static function apply(Request $filters, $with = [])

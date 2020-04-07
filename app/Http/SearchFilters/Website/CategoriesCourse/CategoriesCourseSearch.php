@@ -3,7 +3,7 @@
 namespace App\Http\SearchFilters\Website\CategoriesCourse;
 
 use App\Models\CategoriesCourse;
-use App\SearchFilters\ApiSearchableTrait;
+use App\Http\SearchFilters\ApiSearchableTrait;
 
 class CategoriesCourseSearch
 {

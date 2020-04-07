@@ -189,6 +189,8 @@ return [
         App\Repositories\Provider\ProviderServiceProvider::class,
         App\Repositories\Transaction\TransactionServiceProvider::class,
         App\Repositories\TransactionStatus\TransactionStatusServiceProvider::class,
+        App\Repositories\AdminUser\AdminUserServiceProvider::class,
+        App\Repositories\User\UserServiceProvider::class,
 
 
         /*

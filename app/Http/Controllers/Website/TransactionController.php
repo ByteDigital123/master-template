@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Transaction\StoreTransactionRequest;
-use App\Http\Requests\Transaction\UpdateTransactionRequest;
-use App\Http\Resources\Transaction\TransactionResource;
+use App\Http\Requests\Website\Transaction\StoreTransactionRequest;
+use App\Http\Requests\Website\Transaction\UpdateTransactionRequest;
+use App\Http\Resources\Website\Transaction\TransactionResource;
 use App\Services\TransactionService;
 use Illuminate\Http\Request;
 

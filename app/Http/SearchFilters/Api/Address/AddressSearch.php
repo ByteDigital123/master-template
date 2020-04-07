@@ -3,7 +3,7 @@
 namespace App\Http\SearchFilters\Api\Address;
 
 use App\Models\Address;
-use App\SearchFilters\ApiSearchableTrait;
+use App\Http\SearchFilters\ApiSearchableTrait;
 
 class AddressSearch
 {

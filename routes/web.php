@@ -27,4 +27,19 @@ Route::group(['prefix' => 'auth'], function (){
 });
 
 
+Route::get('/featured', 'Website\CourseController@featured');
+
+Route::post('/search-results', 'Website\CourseController@search');
+
+Route::get('/categories', 'Website\CategoryController@index');
+Route::get('/categories/{slug}', 'Website\CategoryController@show');
+
+Route::post('/contact-form', 'Website\ContactFormController@store');
+
+Route::get('/courses', 'Website\CourseController@index');
+Route::get('/courses/{id}', 'Website\CourseController@show');
+
+Route::post('/purchase', 'Website\CourseController@purchase');
+
+
 

@@ -13,4 +13,5 @@ class EloquentAddressRepository extends BaseRepository implements AddressInterfa
     function __construct(Address $model) {
         $this->model = $model;
     }
+
 }

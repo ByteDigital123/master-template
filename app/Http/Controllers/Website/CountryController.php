@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Country\StoreCountryRequest;
-use App\Http\Requests\Country\UpdateCountryRequest;
-use App\Http\Resources\Country\CountryResource;
+use App\Http\Requests\Website\Country\StoreCountryRequest;
+use App\Http\Requests\Website\Country\UpdateCountryRequest;
+use App\Http\Resources\Website\Country\CountryResource;
 use App\Services\CountryService;
 use Illuminate\Http\Request;
 

@@ -10,6 +10,7 @@ use App\Http\SearchFilters\Api\Course\CourseSearch;
 use App\Models\Course;
 use App\Services\CourseService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class CourseController extends Controller
 {
@@ -45,7 +46,13 @@ class CourseController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->create($attributes);
+        try{
+            $this->service->store($attributes);
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
     }
 
     /**
@@ -73,7 +80,13 @@ class CourseController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->update($id, $attributes);
+        try{
+            $this->service->update($id, $attributes);
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
     }
 
     /**

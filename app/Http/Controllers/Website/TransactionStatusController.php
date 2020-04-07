@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\TransactionStatus\StoreTransactionStatusRequest;
-use App\Http\Requests\TransactionStatus\UpdateTransactionStatusRequest;
-use App\Http\Resources\TransactionStatus\TransactionStatusResource;
+use App\Http\Requests\Website\TransactionStatus\StoreTransactionStatusRequest;
+use App\Http\Requests\Website\TransactionStatus\UpdateTransactionStatusRequest;
+use App\Http\Resources\Website\TransactionStatus\TransactionStatusResource;
 use App\Services\TransactionStatusService;
 use Illuminate\Http\Request;
 

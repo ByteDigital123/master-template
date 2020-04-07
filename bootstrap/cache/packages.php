@@ -17,6 +17,13 @@
       'Scaffold' => 'Bytedigital123\\Scaffold\\ScaffoldFacade',
     ),
   ),
+  'consoletvs/invoices' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'ConsoleTVs\\Invoices\\InvoicesServiceProvider',
+    ),
+  ),
   'facade/ignition' => 
   array (
     'providers' => 

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\PermissionGroup\StorePermissionGroupRequest;
-use App\Http\Requests\PermissionGroup\UpdatePermissionGroupRequest;
-use App\Http\Resources\PermissionGroup\PermissionGroupResource;
+use App\Http\Requests\Website\PermissionGroup\StorePermissionGroupRequest;
+use App\Http\Requests\Website\PermissionGroup\UpdatePermissionGroupRequest;
+use App\Http\Resources\Website\PermissionGroup\PermissionGroupResource;
 use App\Services\PermissionGroupService;
 use Illuminate\Http\Request;
 

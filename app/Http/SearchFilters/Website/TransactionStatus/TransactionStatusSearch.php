@@ -3,7 +3,7 @@
 namespace App\Http\SearchFilters\Website\TransactionStatus;
 
 use App\Models\TransactionStatus;
-use App\SearchFilters\ApiSearchableTrait;
+use App\Http\SearchFilters\ApiSearchableTrait;
 
 class TransactionStatusSearch
 {

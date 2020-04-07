@@ -13,4 +13,6 @@ class EloquentContactFormRepository extends BaseRepository implements ContactFor
     function __construct(ContactForm $model) {
         $this->model = $model;
     }
+
+
 }

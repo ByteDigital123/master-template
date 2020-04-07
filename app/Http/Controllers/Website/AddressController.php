@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Address\StoreAddressRequest;
-use App\Http\Requests\Address\UpdateAddressRequest;
-use App\Http\Resources\Address\AddressResource;
+use App\Http\Requests\Website\Address\StoreAddressRequest;
+use App\Http\Requests\Website\Address\UpdateAddressRequest;
+use App\Http\Resources\Website\Address\AddressResource;
 use App\Services\AddressService;
 use Illuminate\Http\Request;
 

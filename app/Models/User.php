@@ -6,7 +6,7 @@
 
 namespace App\Models;
 
-
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
  * Class User
@@ -23,7 +23,7 @@ namespace App\Models;
  *
  * @package App\Models
  */
-class User extends \Illuminate\Database\Eloquent\Model
+class User extends Authenticatable
 {
 	protected $hidden = [
 		'api_token'

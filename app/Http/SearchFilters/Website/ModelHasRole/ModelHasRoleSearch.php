@@ -3,7 +3,7 @@
 namespace App\Http\SearchFilters\Website\ModelHasRole;
 
 use App\Models\ModelHasRole;
-use App\SearchFilters\ApiSearchableTrait;
+use App\Http\SearchFilters\ApiSearchableTrait;
 
 class ModelHasRoleSearch
 {
