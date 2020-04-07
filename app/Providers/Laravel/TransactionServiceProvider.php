@@ -23,8 +23,6 @@ class TransactionServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->bind(TransactionService::class, function ($app) {
-            return new TransactionService($app->make('App\Repositories\Transaction\TransactionInterface'));
-        });
+        //
     }
 }

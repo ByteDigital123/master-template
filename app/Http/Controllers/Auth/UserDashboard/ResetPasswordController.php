@@ -14,7 +14,7 @@ use App\Mail\User\ForgottenPassword as Mailable;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
-class PasswordResetController extends Controller
+class ResetPasswordController extends Controller
 {
     public function sendPasswordResetToken(Request $request)
     {
