@@ -6,7 +6,7 @@ use App\Repositories\Course\CourseInterface;
 
 class CourseService
 {
-    protected $query;
+    protected $model;
 
     public function __construct(CourseInterface $model)
     {
@@ -57,6 +57,11 @@ class CourseService
         return $this->model->where($column, $from_date, '>')
                            ->where($column, $to_date, '<')
                            ->paginate(config('swell.pagination'));
+    }
+
+    public function search($attributes)
+    {
+        return $this->model->searchCourse($attributes);
     }
 
     /**

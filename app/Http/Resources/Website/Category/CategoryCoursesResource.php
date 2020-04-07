@@ -6,7 +6,7 @@ use App\Http\Resources\Website\Course\CourseResource;
 use App\Http\Resources\Website\Course\NavigationCourseResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class CategoryResource extends JsonResource
+class CategoryCoursesResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -17,10 +17,8 @@ class CategoryResource extends JsonResource
     public function toArray($request)
     {;
         return [
-            'id' => $this->id,
-            'category_name' => $this->name,
-            'number_of_courses' => count($this->courses),
-            'courses' =>  NavigationCourseResource::collection($this->courses)
+            'category' => $this->name,
+            'courses' => NavigationCourseResource::collection($this->courses)
         ];
     }
 }

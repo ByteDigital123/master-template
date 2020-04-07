@@ -31,7 +31,9 @@ class CourseResource extends JsonResource
                 'updated_at' => $this->updated_at,
             ],
             'skills_learnt' => $this->skills_learned,
-            'also_bought' => CourseSingleResource::collection($this->categories->first()->courses->where('id', '!=', $this->id))
+            'also_bought' => $this->categories->map(function($category){
+                return CourseSingleResource::collection($category->courses);
+            })
         ];
     }
 }

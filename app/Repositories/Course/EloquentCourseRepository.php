@@ -53,4 +53,9 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
         return true;
 
     }
+
+    public function searchCourse($attributes)
+    {
+        return $this->model->where('title', 'LIKE', '%' . $attributes['search'] . '%')->get();
+    }
 }

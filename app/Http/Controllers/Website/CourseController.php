@@ -7,6 +7,7 @@ use App\Http\Requests\Website\Course\StoreCourseRequest;
 use App\Http\Requests\Website\Course\UpdateCourseRequest;
 use App\Http\Resources\Website\Course\CourseResource;
 use App\Http\Resources\Website\Course\FeaturedCourseResource;
+use App\Http\SearchFilters\Website\Course\CourseSearch;
 use App\Models\AdminUser;
 use App\Notifications\Admin\CoursePurchased;
 use App\Repositories\Transaction\TransactionInterface;
@@ -69,7 +70,7 @@ class CourseController extends Controller
      */
     public function featured()
     {
-        return new FeaturedCourseResource($this->service->getFeatured());
+        return FeaturedCourseResource::collection($this->service->getFeatured());
     }
 
     public function purchase(Request $request)
@@ -107,6 +108,12 @@ class CourseController extends Controller
             $admin = AdminUser::find(1);
             $admin->notify(new CoursePurchased($admin, $user, $course));
         });
+    }
+
+
+    public function searchCourse(Request $request)
+    {
+        return CourseResource::collection(CourseSearch::apply($request));
     }
 
     /**

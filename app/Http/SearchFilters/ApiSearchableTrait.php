@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\SearchFilters;
 
+use App\SearchFilters\SearchClass;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
 

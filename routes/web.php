@@ -36,10 +36,11 @@ Route::get('/categories/{slug}', 'Website\CategoryController@show');
 
 Route::post('/contact-form', 'Website\ContactFormController@store');
 
-Route::get('/courses', 'Website\CourseController@index');
+Route::get('/courses', 'Website\CategoryController@index');
 Route::get('/courses/{id}', 'Website\CourseController@show');
 
 Route::post('/purchase', 'Website\CourseController@purchase');
 
+Route::post('/course/search', 'Website\CourseController@searchCourse');
 
 

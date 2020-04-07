@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Website;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Website\Category\StoreCategoryRequest;
 use App\Http\Requests\Website\Category\UpdateCategoryRequest;
+use App\Http\Resources\Website\Category\CategoryCoursesResource;
+use App\Http\Resources\Website\Category\CategoryOutlineResource;
 use App\Http\Resources\Website\Category\CategoryResource;
 use App\Services\CategoryService;
 use Illuminate\Http\Request;
@@ -25,7 +27,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return CategoryResource::collection($this->service->get());
+        return CategoryOutlineResource::collection($this->service->get());
     }
 
     /**

@@ -61,6 +61,17 @@ class Course extends \Illuminate\Database\Eloquent\Model
         'slug'
 	];
 
+	public $searchable = [
+		'title',
+		'provider_price',
+		'retail_price',
+		'description',
+        'featured',
+		'excerpt',
+		'duration',
+        'slug'
+	];
+
 	public function provider()
 	{
 		return $this->belongsTo(\App\Models\Provider::class);
