@@ -35,7 +35,7 @@
           <entry key="env" value="5" />
           <entry key="example" value="1" />
           <entry key="json" value="9" />
-          <entry key="php" value="444" />
+          <entry key="php" value="446" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -43,7 +43,7 @@
           <entry key=".env file" value="5" />
           <entry key="Blade" value="3" />
           <entry key="JSON" value="9" />
-          <entry key="PHP" value="441" />
+          <entry key="PHP" value="443" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -53,7 +53,7 @@
           <entry key="env" value="54" />
           <entry key="example" value="18" />
           <entry key="json" value="5" />
-          <entry key="php" value="11064" />
+          <entry key="php" value="11067" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -61,7 +61,7 @@
           <entry key=".env file" value="54" />
           <entry key="Blade" value="50" />
           <entry key="JSON" value="5" />
-          <entry key="PHP" value="11014" />
+          <entry key="PHP" value="11017" />
           <entry key="PLAIN_TEXT" value="40" />
         </counts>
       </usages-collector>
@@ -82,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/CourseSearch.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -99,38 +99,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="79" column="30" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseSingleResource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
-              <folding>
-                <element signature="e#53#117#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+            <state relative-caret-position="304">
+              <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="240">
+              <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+              <folding>
+                <element signature="e#41#75#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,7 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AuthorizationController</find>
       <find>Laravel\Passport\Http\Controllers\AuthorizationController</find>
       <find>User</find>
       <find>App\User</find>
@@ -169,6 +150,7 @@
       <find>featured</find>
       <find>search(</find>
       <find>searchCourse</find>
+      <find>SearchableTrait</find>
     </findStrings>
     <replaceStrings>
       <replace>namespace App\Models;</replace>
@@ -197,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Course/UpdateCourseRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CourseController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/AdminUser/EloquentAdminUserRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminUserController.php" />
@@ -248,6 +229,7 @@
         <option value="$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php" />
+        <option value="$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php" />
       </list>
     </option>
   </component>
@@ -379,11 +361,11 @@
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-cors" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
-    <option name="y" value="194" />
-    <option name="width" value="1678" />
-    <option name="height" value="793" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="824" />
+    <option name="y" value="23" />
+    <option name="width" value="1045" />
+    <option name="height" value="986" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -532,12 +514,12 @@
       <workItem from="1582877675448" duration="25781000" />
       <workItem from="1584003319756" duration="16051000" />
       <workItem from="1585921576627" duration="1470000" />
-      <workItem from="1586244930569" duration="24011000" />
+      <workItem from="1586244930569" duration="24275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107255000" />
+    <option name="totallyTimeSpent" value="107519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -550,9 +532,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="194" width="1678" height="793" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.22493887" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.22493887" />
       <window_info id="Structure" order="1" sideWeight="0.5009141" side_tool="true" weight="0.230658" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -566,7 +547,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tinkerwell" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35520685" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35520685" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -743,19 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding>
-            <element signature="e#41#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/Api/ResetPasswordController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -879,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="79" column="30" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -896,7 +857,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/CourseSearch.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -931,13 +892,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseSingleResource.php">
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
-          <folding>
-            <element signature="e#53#117#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -948,10 +906,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#37#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseSingleResource.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="e#53#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+          <folding>
+            <element signature="e#41#75#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
