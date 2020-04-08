@@ -32,9 +32,7 @@ class CourseResource extends JsonResource
             'categories' => CategoryMinimalResource::collection($this->categories),
             'skills_learnt' => $this->skills_learned,
             'also_bought' => $this->categories->map(function($category){
-                return [
-                    "courses" => CourseSingleResource::collection($category->courses)
-                ];
+                return CourseSingleResource::collection($category->courses);
             })
         ];
     }
