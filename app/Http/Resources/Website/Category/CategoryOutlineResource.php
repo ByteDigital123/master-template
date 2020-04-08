@@ -19,6 +19,7 @@ class CategoryOutlineResource extends JsonResource
         return [
             'id' => $this->id,
             'category_name' => $this->name,
+            'courses' => $this->courses
         ];
     }
 }

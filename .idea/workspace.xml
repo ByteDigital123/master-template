@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42720b84-48a2-492a-9f97-b392424ab08e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +32,7 @@
           <entry key="env" value="5" />
           <entry key="example" value="1" />
           <entry key="json" value="9" />
-          <entry key="php" value="414" />
+          <entry key="php" value="417" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -39,7 +40,7 @@
           <entry key=".env file" value="5" />
           <entry key="Blade" value="3" />
           <entry key="JSON" value="9" />
-          <entry key="PHP" value="411" />
+          <entry key="PHP" value="414" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -49,7 +50,7 @@
           <entry key="env" value="54" />
           <entry key="example" value="18" />
           <entry key="json" value="5" />
-          <entry key="php" value="10102" />
+          <entry key="php" value="10130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -57,7 +58,7 @@
           <entry key=".env file" value="54" />
           <entry key="Blade" value="50" />
           <entry key="JSON" value="5" />
-          <entry key="PHP" value="10052" />
+          <entry key="PHP" value="10080" />
           <entry key="PLAIN_TEXT" value="33" />
         </counts>
       </usages-collector>
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="49" selection-start-line="49" selection-start-column="2" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="297">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -84,19 +85,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/cors.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="330">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="-221">
+              <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -104,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Providers/Laravel/TransactionServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="360">
               <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
             </state>
           </provider>
@@ -223,7 +233,6 @@
         <option value="$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseSingleResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryCoursesResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/Website/Course/NavigationCourseResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Website/CategoryController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" />
@@ -241,6 +250,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/PasswordResetController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/ResetPasswordController.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php" />
       </list>
     </option>
   </component>
@@ -374,9 +384,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="2" />
-    <option name="y" value="314" />
+    <option name="y" value="200" />
     <option name="width" value="1678" />
-    <option name="height" value="673" />
+    <option name="height" value="787" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -408,7 +418,15 @@
               <item name="cpd" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchFilters" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cpd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpd" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cpd" type="b2602c69:ProjectViewProjectNode" />
@@ -479,12 +497,12 @@
       <workItem from="1582877675448" duration="25781000" />
       <workItem from="1584003319756" duration="16051000" />
       <workItem from="1585921576627" duration="1470000" />
-      <workItem from="1586244930569" duration="14847000" />
+      <workItem from="1586244930569" duration="15502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98091000" />
+    <option name="totallyTimeSpent" value="98746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,10 +514,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="314" width="1678" height="673" extended-state="0" />
+    <frame x="2" y="200" width="1678" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.14425428" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.22493887" />
       <window_info id="Structure" order="1" sideWeight="0.5009141" side_tool="true" weight="0.230658" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -513,7 +531,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tinkerwell" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24213076" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20143884" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -552,13 +570,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Repositories/User/UserInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -718,20 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryResource.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -808,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="49" selection-start-line="49" selection-start-column="2" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -852,13 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/Laravel/TransactionServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/Api/ResetPasswordController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -872,6 +855,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/Laravel/TransactionServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/CourseSearch.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/TransactionService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -879,17 +886,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/cors.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="297">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="330">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="39" />
         </state>
       </provider>
     </entry>
