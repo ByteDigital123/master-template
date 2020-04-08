@@ -71,7 +71,7 @@ class CourseController extends Controller
         $attributes = $request->all();
 
         if(isset($attributes['course']) && !is_null($attributes['course'])){
-            return new CourseResource(Course::where('id', $attributes['course'])->first());
+            return CourseResource::collection(Course::where('id', $attributes['course'])->get());
         }elseif(isset($attributes['category']) && !is_null($attributes['category'])){
             return CourseResource::collection(Category::where('id', $attributes['category'])->first()->courses);
         }else{
