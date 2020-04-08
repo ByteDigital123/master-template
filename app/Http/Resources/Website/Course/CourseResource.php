@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources\Website\Course;
 
+use App\Http\Resources\Website\Category\CategoryMinimalResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class CourseResource extends JsonResource
@@ -28,9 +29,12 @@ class CourseResource extends JsonResource
             'provider_reference_id' => $this->provider_reference_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'categories' => CategoryMinimalResource::collection($this->categories),
             'skills_learnt' => $this->skills_learned,
             'also_bought' => $this->categories->map(function($category){
-                return CourseSingleResource::collection($category->courses);
+                return [
+                    "courses" => CourseSingleResource::collection($category->courses)
+                ];
             })
         ];
     }
