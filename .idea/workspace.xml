@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42720b84-48a2-492a-9f97-b392424ab08e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +49,7 @@
           <entry key="env" value="54" />
           <entry key="example" value="18" />
           <entry key="json" value="5" />
-          <entry key="php" value="11067" />
+          <entry key="php" value="11071" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -61,7 +57,7 @@
           <entry key=".env file" value="54" />
           <entry key="Blade" value="50" />
           <entry key="JSON" value="5" />
-          <entry key="PHP" value="11017" />
+          <entry key="PHP" value="11021" />
           <entry key="PLAIN_TEXT" value="40" />
         </counts>
       </usages-collector>
@@ -87,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="180">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -99,17 +95,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="464">
               <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+            <state relative-caret-position="435">
+              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
               <folding>
                 <element signature="e#41#75#0#PHP" expanded="true" />
               </folding>
@@ -226,10 +222,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php" />
         <option value="$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/category.php" />
         <option value="$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/CategoryFilter.php" />
-        <option value="$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php" />
         <option value="$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php" />
+        <option value="$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php" />
       </list>
     </option>
   </component>
@@ -361,11 +357,11 @@
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-cors" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="824" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="60" />
     <option name="y" value="23" />
-    <option name="width" value="1045" />
-    <option name="height" value="986" />
+    <option name="width" value="1519" />
+    <option name="height" value="987" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -514,12 +510,12 @@
       <workItem from="1582877675448" duration="25781000" />
       <workItem from="1584003319756" duration="16051000" />
       <workItem from="1585921576627" duration="1470000" />
-      <workItem from="1586244930569" duration="24275000" />
+      <workItem from="1586244930569" duration="24811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107519000" />
+    <option name="totallyTimeSpent" value="108055000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -531,9 +527,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="194" width="1678" height="793" extended-state="0" />
+    <frame x="60" y="23" width="1519" height="987" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.22493887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.24915369" />
       <window_info id="Structure" order="1" sideWeight="0.5009141" side_tool="true" weight="0.230658" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -547,7 +544,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tinkerwell" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35520685" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27821228" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -847,13 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/CourseSearch.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -926,20 +916,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding>
+            <element signature="e#41#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Course.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="464">
           <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/Course/Filters/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="80" lean-forward="true" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-          <folding>
-            <element signature="e#41#75#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>

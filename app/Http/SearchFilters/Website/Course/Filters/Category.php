@@ -11,7 +11,7 @@ class Category
     public static function apply($builder, $value)
     {
         return $builder->whereHas('categories', function ($q) use ($value){
-            $q->where('name', 'LIKE', '%' . $value . '%');
+            $q->where('slug', $value);
         });
     }
 
