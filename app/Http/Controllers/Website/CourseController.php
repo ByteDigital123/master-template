@@ -9,6 +9,8 @@ use App\Http\Resources\Website\Course\CourseResource;
 use App\Http\Resources\Website\Course\FeaturedCourseResource;
 use App\Http\SearchFilters\Website\Course\CourseSearch;
 use App\Models\AdminUser;
+use App\Models\Category;
+use App\Models\Course;
 use App\Notifications\Admin\CoursePurchased;
 use App\Repositories\Transaction\TransactionInterface;
 use App\Repositories\TransactionStatus\TransactionStatusInterface;
@@ -64,6 +66,16 @@ class CourseController extends Controller
         return CourseResource::collection($this->service->getAll());
     }
 
+    public function search(Request $request)
+    {
+        $attributes = $request->all();
+
+        if(isset($attributes['course']) && !is_null($attributes['course'])){
+            return new CourseResource(Course::where('id', $attributes['course'])->first());
+        }else{
+            return CourseResource::collection(Category::where('id', $attributes['category'])->first()->courses);
+        }
+    }
     /**
      * Get featured courses
      * 

@@ -47,6 +47,7 @@ Route::post('/course/search', 'Website\CourseController@searchCourse');
 
 
 
+
 //Route::post('test', function (\Illuminate\Http\Request $request){
 //    $attributes = $request->all();
 //    $client = (new VideoTileService());
