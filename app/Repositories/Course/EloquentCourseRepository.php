@@ -54,13 +54,4 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
 
     }
 
-    public function searchCourse($attributes)
-    {
-        if(isset($attributes['course'])){
-            return $this->model->where('id', $attributes['course'])->get();
-        }else{
-            return $this->model->where('id', $attributes['course'])->get();
-        }
-
-    }
 }

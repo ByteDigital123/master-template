@@ -19,5 +19,4 @@ interface CourseInterface {
 	public function where($column, $value, $operator = '=');
 	public function whereIn($column, $value);
 	public function with($relations);
-    public function searchCourse($attributes);
 }
