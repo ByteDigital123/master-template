@@ -42,7 +42,7 @@ class CourseService
      */
     public function getFeatured()
     {
-        return $this->model->where('featured', true)->get();
+        return $this->model->where('featured', true)->with('categories')->limit(4)->get();
     }
 
     /**
