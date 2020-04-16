@@ -3,7 +3,7 @@
 return [
 
     'vendor_name' => 'brightonschoolo',
-    'integration_key' => 'UBBDHFTz9TRBqKfEl7uWgmlWRuYv2z8HKHaRTdNRs8j43oAUO4',
-    'integration_password' => 'MNU5H9JDk91KMeXTZpGJGkiEbpETcaAApNyikpahA1Ov4k8uiRfLFuZ571vyJAbjd',
+    'integration_key' => 'VdeSdBgPTAaBMdBVhPkzPYbTSxvsf2sIm8V6OXaMl95Cm7lbdU',
+    'integration_password' => '5tEAVNsrX9J0HYIjyu25yQe5GqdMewCa4FqtQ8XmBRihgpqSKmHdVDeDvCnDX2oVr',
 
 ];

@@ -35,6 +35,8 @@ class User extends Authenticatable
 		'username',
 		'email',
 		'telephone',
-		'api_token'
+		'api_token',
+        'videotile_id',
+        'password'
 	];
 }

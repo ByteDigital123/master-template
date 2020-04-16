@@ -11,6 +11,7 @@ use App\Http\SearchFilters\Website\Course\CourseSearch;
 use App\Models\AdminUser;
 use App\Models\Category;
 use App\Models\Course;
+use App\Models\User;
 use App\Notifications\Admin\CoursePurchased;
 use App\Repositories\Transaction\TransactionInterface;
 use App\Repositories\TransactionStatus\TransactionStatusInterface;
@@ -21,6 +22,7 @@ use App\Services\UserService;
 use App\Services\VideoTileService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class CourseController extends Controller
 {
@@ -92,14 +94,15 @@ class CourseController extends Controller
     {
         $attributes = $request->all();
 
-        DB::transaction(function() use($attributes) {
+        try{
             // Create User
-            $user = $this->userService->store([
+            $user = User::firstOrCreate([
+                'email' => $attributes['email']
+            ],[
                 'first_name' => $attributes['first_name'],
                 'last_name' => $attributes['last_name'],
                 'email' => $attributes['email'],
-                'telephone' => $attributes['telephone'],
-                'username' => $attributes['username'],
+                'telephone' => $attributes['telephone']
             ]);
 
             $course = $this->service->getById($attributes['course']['id']);
@@ -119,30 +122,36 @@ class CourseController extends Controller
                 'provider_user_id' => $course->provider->name,
             ]);
 
-//            if($course->provider->name == 'VideoTile'){
-//                // Check if user
-//
-//                // CREATE CLIENT
-//                $client = (new VideoTileService());
-//
-//                // CREATE USER
-//                $user = json_decode($client->createUser($attributes['first_name'], $attributes['last_name'], $attributes['email'], $attributes['telephone']), true);
-//
-//
-//                // UPDATE USER ON CPD
-//
-//
-//                // ASSIGN USER TO COURSE
-//
-//
-//
-//
-//            }
+            if($course->provider->name == 'VideoTile'){
+                // Check if user
+
+                // CREATE CLIENT
+                $client = (new VideoTileService());
+
+                // CREATE USER
+                $clientUser = json_decode($client->createUser($attributes['first_name'], $attributes['last_name'], $attributes['email'], $attributes['telephone']), true);
+
+                // UPDATE USER ON CPD
+                $user->username     = $clientUser['username'];
+                $user->videotile_id = $clientUser['user_id'];
+                $user->password     = $clientUser['password'];
+                $user->api_token    = $clientUser['api_token'];
+                $user->save();
+
+                // ASSIGN USER TO COURSE
+                $client->assignCourseByUserId($clientUser['user_id'], $course->provider_reference_id);
+            }
 
             // Send notification
             $admin = AdminUser::find(1);
             $admin->notify(new CoursePurchased($admin, $user, $course));
-        });
+
+            return response()->success('Thank you for your purchase');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
+
     }
 
 

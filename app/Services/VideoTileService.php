@@ -279,7 +279,9 @@ class VideoTileService
     {
         return $this->request('POST', 'admin/course/assign', [
             'form_params' => [
-                'admin_token' => $this->_adminToken
+                'admin_token' => $this->_adminToken,
+                'user_id' => $userId,
+                'course_id' => $courseId
             ]
         ]);
     }
