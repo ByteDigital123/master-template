@@ -42,11 +42,15 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
-  'laravel/airlock' => 
+  'intervention/image' => 
   array (
     'providers' => 
     array (
-      0 => 'Laravel\\Airlock\\AirlockServiceProvider',
+      0 => 'Intervention\\Image\\ImageServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Image' => 'Intervention\\Image\\Facades\\Image',
     ),
   ),
   'laravel/passport' => 

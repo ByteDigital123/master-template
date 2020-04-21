@@ -31,6 +31,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth:admin_api'], function () {
 
+    // FILE UPLOAD
+    Route::post('file-upload', 'Api\ImageController@createFile');
+
     Route::get('auth/current', 'Api\AdminUserController@currentUser');
 
     Route::get('admin-users', 'Api\AdminUserController@index');
