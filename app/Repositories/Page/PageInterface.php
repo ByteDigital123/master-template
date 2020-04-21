@@ -13,7 +13,6 @@ interface PageInterface {
 	public function first();
 	public function get();
 	public function getById($id);
-	public function getBySlug($slug);
 	public function limit($limit);
 	public function orderBy($column, $value);
 	public function updateById($id, array $data);

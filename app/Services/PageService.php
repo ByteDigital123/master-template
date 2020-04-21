@@ -20,7 +20,7 @@ class PageService
      */
     public function getAll()
     {
-        return $this->model->paginate(config('site.pagination'));
+        return $this->model->paginate(config('swell.pagination'));
     }
 
     /**
@@ -35,17 +35,6 @@ class PageService
     }
 
     /**
-     * get a single row of data
-     *
-     * @param integer $id
-     * @return collection
-     */
-    public function getBySlug($slug)
-    {
-        return $this->model->getBySlug($slug);
-    }
-
-    /**
      * return the data between specific dates
      *
      * @param date $from_date
@@ -56,7 +45,7 @@ class PageService
     {
         return $this->model->where($column, $from_date, '>')
                            ->where($column, $to_date, '<')
-                           ->paginate(config('site.pagination'));
+                           ->paginate(config('swell.pagination'));
     }
 
     /**
