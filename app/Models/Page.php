@@ -4,16 +4,27 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Str;
 
 class Page extends Model
 {
-    use SoftDeletes;
+    protected $casts = [
+      'content' => 'array'
+    ];
 
     protected $fillable = [
       'name',
+      'slug',
       'url',
       'content',
     ];
+
+
+    public function setNameAttribute($value)
+     {
+         $this->attributes['name'] = $value;
+         $this->attributes['slug'] = Str::slug($value);
+     }
 
 
 }
