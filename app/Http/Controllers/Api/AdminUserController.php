@@ -10,6 +10,7 @@ use App\Http\SearchFilters\Api\AdminUser\AdminUserSearch;
 use App\Models\AdminUser;
 use App\Services\AdminUserService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 class AdminUserController extends Controller
@@ -20,6 +21,16 @@ class AdminUserController extends Controller
     public function __construct(AdminUserService $service)
     {
         $this->service = $service;
+    }
+
+    /**
+     * Display the current user details
+     *
+     * @return CurrentUserResource
+     */
+    public function currentUser()
+    {
+        return new AdminUserResource(Auth::guard('admin_api')->user());
     }
 
     /**

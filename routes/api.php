@@ -31,6 +31,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth:admin_api'], function () {
 
+    Route::get('auth/current', 'Api\AdminUserController@currentUser');
+
     Route::get('admin-users', 'Api\AdminUserController@index');
     Route::get('admin-users/{id}', 'Api\AdminUserController@show');
     Route::post('admin-users', 'Api\AdminUserController@store');
