@@ -23,7 +23,6 @@ class CreateCoursesTable extends Migration {
 			$table->string('excerpt');
 			$table->boolean('featured')->default(false);
 			$table->integer('duration');
-			$table->string('main_image')->nullable();
 			$table->json('skills_learned')->nullable();
 			$table->string('provider_reference_id');
             $table->string('slug')->unique();

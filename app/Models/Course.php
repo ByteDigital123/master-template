@@ -39,7 +39,9 @@ class Course extends \Illuminate\Database\Eloquent\Model
 		'retail_price' => 'int',
 		'duration' => 'int',
 		'featured' => 'bool',
-		'skills_learned' => 'array'
+		'skills_learned' => 'array',
+		'modules' => 'array',
+		'main_image' => 'array'
 	];
 
 	protected $hidden = [
@@ -58,7 +60,9 @@ class Course extends \Illuminate\Database\Eloquent\Model
 		'duration',
 		'main_image',
 		'provider_reference_id',
-        'slug'
+        'slug',
+        'modules',
+        'discounted_retail_price',
 	];
 
 	public $searchable = [
