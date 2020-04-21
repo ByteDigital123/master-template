@@ -10,6 +10,7 @@ use App\Http\SearchFilters\Api\Category\CategorySearch;
 use App\Models\Category;
 use App\Services\CategoryService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class CategoryController extends Controller
 {
@@ -45,7 +46,13 @@ class CategoryController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->create($attributes);
+        try{
+            $this->service->store($attributes);
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
     }
 
     /**
@@ -73,7 +80,13 @@ class CategoryController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->update($id, $attributes);
+        try{
+            $this->service->update($id, $attributes);
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
     }
 
     /**
@@ -88,7 +101,11 @@ class CategoryController extends Controller
 
         $attributes = $request->json()->all();
 
-        return $this->service->delete($attributes);
+        if($category = Category::where('id', $attributes['id'])->has('courses')->first()){
+            abort(401, 'This category has courses linked to it');
+        }
+
+        return $this->service->destroy($attributes);
     }
 
 }

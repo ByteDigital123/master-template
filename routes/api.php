@@ -39,6 +39,12 @@ Route::group(['middleware' => 'auth:admin_api'], function () {
     Route::put('admin-users/{id}', 'Api\AdminUserController@update');
     Route::delete('admin-users', 'Api\AdminUserController@destroy');
 
+    Route::get('categories', 'Api\CategoryController@index');
+    Route::get('categories/{id}', 'Api\CategoryController@show');
+    Route::post('categories', 'Api\CategoryController@store');
+    Route::put('categories/{id}', 'Api\CategoryController@update');
+    Route::delete('categories', 'Api\CategoryController@destroy');
+
     Route::get('courses', 'Api\CourseController@index');
     Route::get('courses/{id}', 'Api\CourseController@show');
     Route::post('courses', 'Api\CourseController@store');
