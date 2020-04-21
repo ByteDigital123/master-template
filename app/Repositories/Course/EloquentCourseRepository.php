@@ -27,7 +27,7 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
             'excerpt'               => $attributes['excerpt'],
             'duration'              => $attributes['duration'],
             'main_image'            => $attributes['main_image'][0]['url'],
-            'provider_reference_id' => $attributes['provider_reference_id']
+            'provider_reference_id' => isset($attributes['provider_reference_id']) ? $attributes['provider_reference_id'] : null
         ]);
 
         $course->categories()->sync(collect($attributes['categories'])->pluck('id'));
