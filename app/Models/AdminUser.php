@@ -8,6 +8,7 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
@@ -25,7 +26,7 @@ use Spatie\Permission\Traits\HasRoles;
  */
 class AdminUser extends Authenticatable
 {
-    use Notifiable, HasRoles;
+    use Notifiable, HasApiTokens, HasRoles;
 
     protected $guard_name = 'api';
 

@@ -1,13 +1,13 @@
 <?php
-
 namespace App\Http\Controllers\Auth\Api;
 
-use Auth;
-use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\Controller;
+use Illuminate\Validation\ValidationException;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Http\Requests\Auth\LoginRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
 class LoginController extends Controller
 {
     /*
@@ -20,16 +20,13 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
-
     use AuthenticatesUsers;
-
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
-
+    protected $redirectTo = '/';
     /**
      * Create a new controller instance.
      *
@@ -37,23 +34,19 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest:api')->except('logout');
+        $this->middleware('guest')->except('logout');
     }
-
     /**
      * login api
      *
      * @return \Illuminate\Http\Response
      */
-    public function login(Request $request)
-    {
+    public function login(LoginRequest $request){
         if ($this->attemptLogin($request)) {
             return $this->sendLoginResponse($request);
         }
-
-        return response()->error('Invalid username or password', 500);
+        return response()->error('Invalid email or password', 401);
     }
-
     /**
      * Send the response after the user was authenticated.
      *
@@ -62,31 +55,25 @@ class LoginController extends Controller
      */
     protected function sendLoginResponse(Request $request)
     {
-        $request->session()->regenerate();
-
-        $this->clearLoginAttempts($request);
-
-        return $this->authenticated($request, $this->guard()->user())
-            ?: response()->json(['success' => 'You are now logged In as an admin'], 200);
+        $user = $this->guard()->getLastAttempted();
+        $token = $user->api_token;
+        $success['token'] =  $user->createToken($token)->accessToken;
+        return response()->json(['success' => $success], 200);
     }
-
     /**
-     * Log the user out of the application.
+     * Get the failed login response instance.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Symfony\Component\HttpFoundation\Response
+     *
+     * @throws ValidationException
      */
-    public function logout(Request $request)
+    protected function sendFailedLoginResponse(Request $request)
     {
-        $this->guard()->logout();
-
-        $request->session()->invalidate();
-
-        $request->session()->regenerateToken();
-
-        return $this->loggedOut($request) ?: response()->json(['success' => 'You are now logged out from admin'], 200);
+        throw ValidationException::withMessages([
+            $this->username() => [trans('auth.failed')],
+        ]);
     }
-
     /**
      * Get the guard to be used during authentication.
      *
@@ -94,6 +81,13 @@ class LoginController extends Controller
      */
     protected function guard()
     {
-        return Auth::guard('api');
+        return Auth::guard('admin');
+    }
+    public function logoutApi(Request $request)
+    {
+        $request->user()->token()->delete();
+        return response()->json([
+            'message' => 'Successfully logged out'
+        ]);
     }
 }
