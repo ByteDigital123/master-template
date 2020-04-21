@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="42720b84-48a2-492a-9f97-b392424ab08e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CourseController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="158">
-              <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -97,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -491,12 +490,12 @@
       <workItem from="1582877675448" duration="25781000" />
       <workItem from="1584003319756" duration="16051000" />
       <workItem from="1585921576627" duration="1470000" />
-      <workItem from="1586244930569" duration="45604000" />
+      <workItem from="1586244930569" duration="45656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128848000" />
+    <option name="totallyTimeSpent" value="128900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -924,14 +923,14 @@
     <entry file="file://$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CourseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
         </state>
       </provider>
     </entry>

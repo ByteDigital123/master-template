@@ -46,13 +46,13 @@ class CourseController extends Controller
 
         $attributes = $request->all();
 
-//        try{
+        try{
             $this->service->store($attributes);
             return response()->success('This action has been completed successfully');
-//        }catch (\Exception $e){
-//            Log::info($e->getMessage());
-//            return response()->error('This action could not be completed');
-//        }
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
     }
 
     /**
