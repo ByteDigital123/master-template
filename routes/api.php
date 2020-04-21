@@ -29,7 +29,7 @@ Route::group(['prefix' => 'auth'], function (){
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['middleware' => 'auth:api'], function () {
+Route::group(['middleware' => 'auth:admin_api'], function () {
 
     Route::get('admin-users', 'Api\AdminUserController@index');
     Route::get('admin-users/{id}', 'Api\AdminUserController@show');
