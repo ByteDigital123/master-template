@@ -31,7 +31,7 @@ class UserService
      */
     public function getById($id)
     {
-        return $this->model->getById($id);
+        return $this->model->with('transactions.course')->getById($id);
     }
 
     /**

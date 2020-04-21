@@ -45,11 +45,17 @@ class Transaction extends \Illuminate\Database\Eloquent\Model
 		'fee',
 		'net_amount',
 		'transaction_reference_id',
-		'provider_user_id'
+		'provider_user_id',
+		'course_id',
 	];
 
 	public function transaction_status()
 	{
 		return $this->belongsTo(\App\Models\TransactionStatus::class, 'status_id');
+	}
+
+    public function course()
+    {
+        return $this->belongsTo(Course::class, 'course_id');
 	}
 }

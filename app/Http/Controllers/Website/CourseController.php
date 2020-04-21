@@ -120,6 +120,7 @@ class CourseController extends Controller
                 'net_amount' => $course->retail_price,
                 'transaction_reference_id' => $payment->transactionId,
                 'provider_user_id' => $course->provider->name,
+                'course_id' => $course->id,
             ]);
 
             if($course->provider->name == 'VideoTile'){

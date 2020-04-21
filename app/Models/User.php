@@ -39,4 +39,9 @@ class User extends Authenticatable
         'videotile_id',
         'password'
 	];
+
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class);
+	}
 }
