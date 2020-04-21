@@ -53,7 +53,8 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
             'main_image'            => $attributes['main_image'][0],
             'provider_reference_id' => isset($attributes['provider_reference_id']) ? $attributes['provider_reference_id'] : null,
             'modules'               => isset($attributes['modules']) ? $attributes['modules'] : null,
-            'skills_learned'        => isset($attributes['skills_learned']) ? $attributes['skills_learned'] : null
+            'skills_learned'        => isset($attributes['skills_learned']) ? $attributes['skills_learned'] : null,
+            'discounted_retail_price'        => isset($attributes['discounted_retail_price']) ? $attributes['discounted_retail_price'] : null
         ]);
 
         $course->categories()->sync(collect($attributes['categories'])->pluck('id'));
