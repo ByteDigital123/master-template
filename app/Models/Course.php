@@ -62,6 +62,7 @@ class Course extends \Illuminate\Database\Eloquent\Model
 		'provider_reference_id',
         'slug',
         'modules',
+        'skills_learned',
         'discounted_retail_price',
 	];
 
