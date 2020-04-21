@@ -29,7 +29,7 @@ class ProviderController extends Controller
     public function index(Request $request)
     {
         $this->authorize('list', Provider::class);
-        return ProviderResource::collection(ProviderSearch::apply($request));
+        return ProviderResource::collection($this->service->get());
 
     }
 

@@ -24,6 +24,16 @@ class ProviderService
     }
 
     /**
+     * get all of the data from the repository
+     *
+     * @return collection
+     */
+    public function get()
+    {
+        return $this->model->get();
+    }
+
+    /**
      * get a single row of data
      *
      * @param integer $id
