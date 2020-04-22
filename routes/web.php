@@ -41,7 +41,7 @@ Route::post('/contact-form', 'Website\ContactFormController@store');
 Route::get('/courses', 'Website\CategoryController@index');
 Route::get('/courses/{id}', 'Website\CourseController@show');
 
-Route::get('/pages/{slug}', 'Website\CourseController@show');
+Route::get('/pages/{slug}', 'Website\PageController@show');
 
 Route::post('/purchase', 'Website\CourseController@purchase');
 
