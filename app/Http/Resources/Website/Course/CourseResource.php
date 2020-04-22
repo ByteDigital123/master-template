@@ -29,6 +29,8 @@ class CourseResource extends JsonResource
             'provider_reference_id' => $this->provider_reference_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'modules' => $this->modules,
+            'discounted_retail_price' => $this->discounted_retail_price,
             'categories' => CategoryMinimalResource::collection($this->categories),
             'skills_learnt' => $this->skills_learned,
             'also_bought' => !is_null($this->categories->first()) ? CourseSingleResource::collection($this->categories->first()->courses->where('id', '!=', $this->id)) : []

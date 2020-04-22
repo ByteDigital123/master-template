@@ -29,8 +29,7 @@ class EloquentAdminUserRepository extends BaseRepository implements AdminUserInt
         return $this->model->where('id', $id)->update([
             'first_name' => $attributes['first_name'],
             'last_name'  => $attributes['last_name'],
-            'email'      => $attributes['email'],
-            'password'   => isset($attributes['password']) ? bcrypt($attributes['password']) : null,
+            'email'      => $attributes['email']
         ]);
     }
 }
