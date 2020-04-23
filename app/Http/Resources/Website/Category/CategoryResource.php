@@ -20,6 +20,7 @@ class CategoryResource extends JsonResource
             'id' => $this->id,
             'category_name' => $this->name,
             'number_of_courses' => count($this->courses),
+            'slug' => $this->slug,
             'courses' =>  NavigationCourseResource::collection($this->courses)
         ];
     }
