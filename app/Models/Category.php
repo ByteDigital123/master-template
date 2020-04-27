@@ -31,6 +31,10 @@ class Category extends \Illuminate\Database\Eloquent\Model
         'slug'
 	];
 
+    public $searchable = [
+        'name'
+    ];
+
 	public function courses()
 	{
 		return $this->belongsToMany(\App\Models\Course::class, 'categories_courses', 'category_id', 'course_id');
