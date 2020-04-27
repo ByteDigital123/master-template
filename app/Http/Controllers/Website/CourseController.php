@@ -94,7 +94,7 @@ class CourseController extends Controller
     {
         $attributes = $request->all();
 
-        try{
+//        try{
             // Create User
             $user = User::firstOrCreate([
                 'email' => $attributes['email']
@@ -148,10 +148,10 @@ class CourseController extends Controller
             $admin->notify(new CoursePurchased($admin, $user, $course));
 
             return response()->success('Thank you for your purchase');
-        }catch (\Exception $e){
-            Log::info($e->getMessage());
-            return response()->error('This action could not be completed - ' . $e->getMessage());
-        }
+//        }catch (\Exception $e){
+//            Log::info($e->getMessage());
+//            return response()->error('This action could not be completed - ' . $e->getMessage());
+//        }
 
     }
 

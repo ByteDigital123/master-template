@@ -121,7 +121,7 @@ class SagePaymentGateway
                     'country' => $billing['country']
                 ],
                 'entryMethod' => 'Ecommerce',
-                'apply3DSecure' => 'Disable',
+                'apply3DSecure' => 0,
                 'applyAvsCvcCheck' => 'Disable',
                 'description' => $user['first_name'] . ' ' . $user['last_name'] . ' paid for course ' . $course->title,
                 'customerEmail' => $user['email'],

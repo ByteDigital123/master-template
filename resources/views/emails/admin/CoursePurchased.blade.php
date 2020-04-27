@@ -1,10 +1,18 @@
 @component('mail::message')
-# Introduction
+# Course Purchased From {{ $course->provider->name }}
 
-The body of your message.
+Hi,
 
-@component('mail::button', ['url' => ''])
-Button Text
+A user has just purchased a course on the CPD system.<br>
+The details can be seen below:
+
+**Course**: {{ $course->title }}
+**Provider Reference ID**: {{ $course->provider_reference_id }}
+**Provider Price**: £{{ $course->provider_price }}
+**Retail Price**: £{{ $course->retail_price }}
+
+@component('mail::button', ['url' => env('APP_BACKEND')])
+Login To Admin
 @endcomponent
 
 Thanks,<br>

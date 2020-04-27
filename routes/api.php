@@ -50,6 +50,12 @@ Route::group(['middleware' => 'auth:admin_api'], function () {
     Route::put('categories/{id}', 'Api\CategoryController@update');
     Route::delete('categories', 'Api\CategoryController@destroy');
 
+    Route::get('providers', 'Api\ProviderController@index');
+    Route::get('providers/{id}', 'Api\ProviderController@show');
+    Route::post('providers', 'Api\ProviderController@store');
+    Route::put('providers/{id}', 'Api\ProviderController@update');
+    Route::delete('providers', 'Api\ProviderController@destroy');
+
     Route::get('courses', 'Api\CourseController@index');
     Route::get('courses/{id}', 'Api\CourseController@show');
     Route::post('courses', 'Api\CourseController@store');
