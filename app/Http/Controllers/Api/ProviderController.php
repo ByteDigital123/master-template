@@ -47,7 +47,7 @@ class ProviderController extends Controller
         $attributes = $request->all();
 
         try{
-            $this->service->create($attributes);
+            $this->service->store($attributes);
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
