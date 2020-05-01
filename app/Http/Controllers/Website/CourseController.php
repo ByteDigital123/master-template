@@ -77,7 +77,7 @@ class CourseController extends Controller
         }elseif(isset($attributes['category']) && !is_null($attributes['category'])){
             return CourseResource::collection(Category::where('id', $attributes['category'])->first()->courses);
         }else{
-            return CourseResource::collection(Course::orderByDesc('created_at')->limit(6)->get());
+            return CourseResource::collection(Course::orderByDesc('created_at')->limit(8)->get());
         }
     }
     /**
