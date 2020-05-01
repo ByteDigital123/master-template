@@ -73,11 +73,11 @@ class CourseController extends Controller
         $attributes = $request->all();
 
         if(isset($attributes['course']) && !is_null($attributes['course'])){
-            return CourseResource::collection(Course::where('id', $attributes['course'])->get());
+            return CourseResource::collection(Course::where('id', $attributes['course'])->orderByDesc('created_at')->get());
         }elseif(isset($attributes['category']) && !is_null($attributes['category'])){
             return CourseResource::collection(Category::where('id', $attributes['category'])->first()->courses);
         }else{
-            return CourseResource::collection(Course::limit(6)->get());
+            return CourseResource::collection(Course::orderByDesc('created_at')->limit(6)->get());
         }
     }
     /**
