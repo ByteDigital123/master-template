@@ -18,10 +18,10 @@ class CourseResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'subtitle' => $this->subtitle,
-            'retail_price' => $this->retail_price,
-            'discounted_retail_price' => $this->discounted_retail_price,
+            'retail_price' => number_format( $this->retail_price / 100, 2),
+            'discounted_retail_price' => number_format( $this->discounted_retail_price / 100, 2),
+            'provider_price' => number_format( $this->provider_price / 100, 2),
             'provider_reference_id' => $this->provider_reference_id,
-            'provider_price' => $this->provider_price,
             'duration' => $this->duration,
             'converted_time' => $this->convertedTime($this->duration),
             'provider' => [
