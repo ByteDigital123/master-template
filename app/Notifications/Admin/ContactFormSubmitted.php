@@ -21,7 +21,7 @@ class ContactFormSubmitted extends Notification
      *
      * @return void
      */
-    public function __construct(ContactForm $contact)
+    public function __construct($contact)
     {
         $this->contact = $contact;
     }

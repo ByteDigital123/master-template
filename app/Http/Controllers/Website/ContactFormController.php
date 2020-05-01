@@ -45,6 +45,8 @@ class ContactFormController extends Controller
             $contact = $this->service->store($attributes);
 
             AdminUser::find(1)->notify(new ContactFormSubmitted($contact));
+
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
