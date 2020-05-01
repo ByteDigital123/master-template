@@ -46,11 +46,10 @@ class ContactFormController extends Controller
 
             AdminUser::find(1)->notify(new ContactFormSubmitted($contact));
 
-
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
     }
 
