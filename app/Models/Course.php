@@ -77,9 +77,6 @@ class Course extends \Illuminate\Database\Eloquent\Model
         'slug'
 	];
 
-	protected $appends = [
-	    'converted_time'
-    ];
 
 	public function provider()
 	{
