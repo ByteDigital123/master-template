@@ -18,6 +18,7 @@ class CourseResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'subtitle' => $this->subtitle,
+            'test_price' => $this->retail_price,
             'retail_price' => number_format( $this->retail_price / 100, 2),
             'discounted_retail_price' => number_format( $this->discounted_retail_price / 100, 2),
             'provider_price' => number_format( $this->provider_price / 100, 2),
