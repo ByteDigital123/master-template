@@ -23,6 +23,7 @@ class CourseResource extends JsonResource
             'provider_reference_id' => $this->provider_reference_id,
             'provider_price' => $this->provider_price,
             'duration' => $this->duration,
+            'converted_time' => $this->convertedTime($this->duration),
             'provider' => [
                 'id' => $this->provider->id,
                 'name' => $this->provider->name

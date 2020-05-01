@@ -77,6 +77,10 @@ class Course extends \Illuminate\Database\Eloquent\Model
         'slug'
 	];
 
+	protected $appends = [
+	    'converted_time'
+    ];
+
 	public function provider()
 	{
 		return $this->belongsTo(\App\Models\Provider::class);
@@ -91,5 +95,20 @@ class Course extends \Illuminate\Database\Eloquent\Model
     {
         $this->attributes['title'] = $value;
         $this->attributes['slug'] = Str::slug($value);
+    }
+
+    public function convertedTime($time)
+    {
+        if ($time < 1) {
+            return;
+        }
+        $hours = floor($time / 60);
+        $minutes = ($time % 60);
+
+        if($minutes < 10){
+            $minutes = "0" . $minutes;
+        }
+
+        return "$hours:$minutes";
     }
 }

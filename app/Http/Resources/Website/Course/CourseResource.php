@@ -26,6 +26,7 @@ class CourseResource extends JsonResource
             'course_category_slug' => $this->course_category_slug,
             'excerpt' => $this->excerpt,
             'duration' => $this->duration,
+            'converted_time' => $this->convertedTime($this->duration),
             'main_image' => $this->main_image,
             'provider_reference_id' => $this->provider_reference_id,
             'created_at' => $this->created_at,
