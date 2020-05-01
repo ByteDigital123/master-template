@@ -18,12 +18,11 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
     public function create(array $attributes)
     {
 
-
-        $provider_price = intval(floatval($attributes['provider_price'])*100);
-        $retail_price = intval(floatval($attributes['retail_price'])*100);
+        $provider_price = explode(".", floatval($attributes['provider_price'] * 100))[0];
+        $retail_price = explode(".", floatval($attributes['retail_price'] * 100))[0];
 
         if(isset($attributes['discounted_retail_price'])){
-            $discounted_retail_price = intval(floatval($attributes['discounted_retail_price'])*100);
+            $discounted_retail_price = explode(".", floatval($attributes['discounted_retail_price'] * 100))[0];
         }
 
         $course = $this->model->create([
@@ -49,11 +48,11 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
 
     public function updateById($id, array $attributes)
     {
-        $provider_price = intval(floatval($attributes['provider_price'])*100);
-        $retail_price = intval(floatval($attributes['retail_price'])*100);
+        $provider_price = explode(".", floatval($attributes['provider_price'] * 100))[0];
+        $retail_price = explode(".", floatval($attributes['retail_price'] * 100))[0];
 
         if(isset($attributes['discounted_retail_price'])){
-            $discounted_retail_price = intval(floatval($attributes['discounted_retail_price'])*100);
+            $discounted_retail_price = explode(".", floatval($attributes['discounted_retail_price'] * 100))[0];
         }
 
 
