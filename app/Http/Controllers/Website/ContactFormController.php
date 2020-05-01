@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Website\ContactForm\StoreContactFormRequest;
 use App\Http\Requests\Website\ContactForm\UpdateContactFormRequest;
 use App\Http\Resources\Website\ContactForm\ContactFormResource;
+use App\Models\AdminUser;
+use App\Notifications\Admin\ContactFormSubmitted;
 use App\Services\ContactFormService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -40,7 +42,9 @@ class ContactFormController extends Controller
         $attributes = $request->all();
 
         try{
-            $this->service->store($attributes);
+            $contact = $this->service->store($attributes);
+
+            AdminUser::find(1)->notify(new ContactFormSubmitted($contact));
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());

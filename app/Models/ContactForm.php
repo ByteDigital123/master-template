@@ -33,6 +33,9 @@ class ContactForm extends \Illuminate\Database\Eloquent\Model
 		'last_name',
 		'email',
 		'message',
-		'agreed_to_marketing'
+		'agreed_to_marketing',
+        'multiple_staff',
+        'multiple_courses',
+        'individual_courses',
 	];
 }
