@@ -21,7 +21,7 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
         $retail_price = number_format($attributes['retail_price'] * 100, 0) * 100;
 
         if(isset($attributes['discounted_retail_price'])){
-            $discounted_retail_price = number_format($attributes['retail_price'] * 100, 0) * 100;
+            $discounted_retail_price = number_format($attributes['discounted_retail_price'] * 100, 0) * 100;
         }
 
         $course = $this->model->create([
@@ -51,7 +51,7 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
         $retail_price = number_format($attributes['retail_price'] * 100, 0) * 100;
 
         if(isset($attributes['discounted_retail_price'])){
-            $discounted_retail_price = number_format($attributes['retail_price'] * 100, 0) * 100;
+            $discounted_retail_price = number_format($attributes['discounted_retail_price'] * 100, 0) * 100;
         }
 
 
