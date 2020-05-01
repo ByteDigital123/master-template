@@ -17,11 +17,18 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
 
     public function create(array $attributes)
     {
+        $provider_price = $attributes['provider_price'] * 100;
+        $retail_price = $attributes['provider_price'] * 100;
+
+        if(isset($attributes['discounted_retail_price'])){
+            $discounted_retail_price = $attributes['provider_price'] * 100;
+        }
+
         $course = $this->model->create([
             'provider_id'           => $attributes['provider']['id'],
             'title'                 => $attributes['title'],
-            'provider_price'        => (int)($attributes['provider_price'] * 100),
-            'retail_price'          => (int)($attributes['retail_price']  * 100),
+            'provider_price'        => (int)$provider_price,
+            'retail_price'          => (int)$retail_price,
             'description'           => $attributes['description'],
             'featured'              => isset($attributes['featured']) ? $attributes['featured'] : false,
             'excerpt'               => $attributes['excerpt'],
@@ -30,7 +37,7 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
             'provider_reference_id' => isset($attributes['provider_reference_id']) ? $attributes['provider_reference_id'] : null,
             'modules'               => isset($attributes['modules']) ? $attributes['modules'] : null,
             'skills_learned'        => isset($attributes['skills_learned']) ? $attributes['skills_learned'] : null,
-            'discounted_retail_price'        => isset($attributes['discounted_retail_price']) ? (int)($attributes['discounted_retail_price'] * 100) : null
+            'discounted_retail_price'        => isset($attributes['discounted_retail_price']) ? (int)$discounted_retail_price : null
         ]);
 
         $course->categories()->sync(collect($attributes['categories'])->pluck('id'));
@@ -40,12 +47,20 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
 
     public function updateById($id, array $attributes)
     {
+        $provider_price = $attributes['provider_price'] * 100;
+        $retail_price = $attributes['provider_price'] * 100;
+
+        if(isset($attributes['discounted_retail_price'])){
+            $discounted_retail_price = $attributes['provider_price'] * 100;
+        }
+
+
         $course = $this->model->find($id);
         $course->update([
             'provider_id'           => $attributes['provider']['id'],
             'title'                 => $attributes['title'],
-            'provider_price'        => (int)($attributes['provider_price'] * 100),
-            'retail_price'          => (int)($attributes['retail_price'] * 100),
+            'provider_price'        => (int)$provider_price,
+            'retail_price'          => (int)$retail_price,
             'description'           => $attributes['description'],
             'featured'              => isset($attributes['featured']) ? $attributes['featured'] : false,
             'excerpt'               => $attributes['excerpt'],
@@ -54,7 +69,7 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
             'provider_reference_id' => isset($attributes['provider_reference_id']) ? $attributes['provider_reference_id'] : null,
             'modules'               => isset($attributes['modules']) ? $attributes['modules'] : null,
             'skills_learned'        => isset($attributes['skills_learned']) ? $attributes['skills_learned'] : null,
-            'discounted_retail_price'        => isset($attributes['discounted_retail_price']) ? (int)($attributes['discounted_retail_price'] * 100) : null
+            'discounted_retail_price'        => isset($attributes['discounted_retail_price']) ? (int)$discounted_retail_price : null
         ]);
 
         $course->categories()->sync(collect($attributes['categories'])->pluck('id'));

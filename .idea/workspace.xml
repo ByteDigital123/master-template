@@ -50,7 +50,7 @@
           <entry key="env" value="105" />
           <entry key="example" value="18" />
           <entry key="json" value="8" />
-          <entry key="php" value="13456" />
+          <entry key="php" value="13487" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -58,7 +58,7 @@
           <entry key=".env file" value="105" />
           <entry key="Blade" value="378" />
           <entry key="JSON" value="8" />
-          <entry key="PHP" value="13078" />
+          <entry key="PHP" value="13109" />
           <entry key="PLAIN_TEXT" value="40" />
         </counts>
       </usages-collector>
@@ -96,10 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="46" column="81" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
-              <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
-              <caret line="56" column="147" selection-start-line="56" selection-start-column="147" selection-end-line="56" selection-end-column="147" />
+            <state relative-caret-position="416">
+              <caret line="71" column="125" selection-start-line="71" selection-start-column="125" selection-end-line="71" selection-end-column="125" />
             </state>
           </provider>
         </entry>
@@ -506,12 +504,12 @@
       <workItem from="1584003319756" duration="16051000" />
       <workItem from="1585921576627" duration="1470000" />
       <workItem from="1586244930569" duration="49181000" />
-      <workItem from="1587541641896" duration="15167000" />
+      <workItem from="1587541641896" duration="15670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147592000" />
+    <option name="totallyTimeSpent" value="148095000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,7 +524,7 @@
     <frame x="-25" y="238" width="1500" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.17558299" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.17558299" />
       <window_info id="Structure" order="1" sideWeight="0.5009141" side_tool="true" weight="0.230658" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -540,7 +538,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tinkerwell" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21242775" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21242775" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -930,10 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="46" column="81" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
-          <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
-          <caret line="56" column="147" selection-start-line="56" selection-start-column="147" selection-end-line="56" selection-end-column="147" />
+        <state relative-caret-position="416">
+          <caret line="71" column="125" selection-start-line="71" selection-start-column="125" selection-end-line="71" selection-end-column="125" />
         </state>
       </provider>
     </entry>
