@@ -25,7 +25,10 @@ namespace App\Models;
 class ContactForm extends \Illuminate\Database\Eloquent\Model
 {
 	protected $casts = [
-		'agreed_to_marketing' => 'bool'
+		'agreed_to_marketing' => 'bool',
+        'multiple_staff' => 'bool',
+        'multiple_courses' => 'bool',
+        'individual_courses' => 'bool'
 	];
 
 	protected $fillable = [
