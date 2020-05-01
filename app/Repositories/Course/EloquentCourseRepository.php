@@ -17,11 +17,11 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
 
     public function create(array $attributes)
     {
-        $provider_price = $attributes['provider_price'] * 100;
-        $retail_price = $attributes['retail_price'] * 100;
+        $provider_price = number_format($attributes['provider_price'] * 100, 0) * 100;
+        $retail_price = number_format($attributes['retail_price'] * 100, 0) * 100;
 
         if(isset($attributes['discounted_retail_price'])){
-            $discounted_retail_price = $attributes['discounted_retail_price'] * 100;
+            $discounted_retail_price = number_format($attributes['retail_price'] * 100, 0) * 100;
         }
 
         $course = $this->model->create([
@@ -47,11 +47,11 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
 
     public function updateById($id, array $attributes)
     {
-        $provider_price = $attributes['provider_price'] * 100;
-        $retail_price = $attributes['retail_price'] * 100;
+        $provider_price = number_format($attributes['provider_price'] * 100, 0) * 100;
+        $retail_price = number_format($attributes['retail_price'] * 100, 0) * 100;
 
         if(isset($attributes['discounted_retail_price'])){
-            $discounted_retail_price = $attributes['discounted_retail_price'] * 100;
+            $discounted_retail_price = number_format($attributes['retail_price'] * 100, 0) * 100;
         }
 
 
