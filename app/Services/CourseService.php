@@ -20,7 +20,7 @@ class CourseService
      */
     public function getAll()
     {
-        return $this->model->paginate(config('swell.pagination'));
+        return $this->model->orderBy('created_at', 'DESC')->paginate(config('swell.pagination'));
     }
 
     /**
