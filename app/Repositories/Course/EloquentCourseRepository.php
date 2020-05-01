@@ -20,8 +20,8 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
         $course = $this->model->create([
             'provider_id'           => $attributes['provider']['id'],
             'title'                 => $attributes['title'],
-            'provider_price'        => $attributes['provider_price'],
-            'retail_price'          => $attributes['retail_price'],
+            'provider_price'        => $attributes['provider_price'] * 100,
+            'retail_price'          => $attributes['retail_price']  * 100,
             'description'           => $attributes['description'],
             'featured'              => isset($attributes['featured']) ? $attributes['featured'] : false,
             'excerpt'               => $attributes['excerpt'],
@@ -44,8 +44,8 @@ class EloquentCourseRepository extends BaseRepository implements CourseInterface
         $course->update([
             'provider_id'           => $attributes['provider']['id'],
             'title'                 => $attributes['title'],
-            'provider_price'        => $attributes['provider_price'],
-            'retail_price'          => $attributes['retail_price'],
+            'provider_price'        => $attributes['provider_price'] * 100,
+            'retail_price'          => $attributes['retail_price'] * 100,
             'description'           => $attributes['description'],
             'featured'              => isset($attributes['featured']) ? $attributes['featured'] : false,
             'excerpt'               => $attributes['excerpt'],
