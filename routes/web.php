@@ -12,8 +12,6 @@
 */
 
 
-use App\Services\VideoTileService;
-
 Route::group(['prefix' => 'auth'], function (){
     // Authentication Routes...
     Route::post('login', 'Auth\UserDashboard\LoginController@login');
@@ -27,34 +25,4 @@ Route::group(['prefix' => 'auth'], function (){
     // Email Verification...
     Route::get('email-verification/{token}', 'Website\UserController@verifyEmailAddress');
 });
-
-
-Route::get('/featured', 'Website\CourseController@featured');
-
-Route::post('/search-results', 'Website\CourseController@search');
-
-Route::get('/categories', 'Website\CategoryController@index');
-Route::get('/categories/{slug}', 'Website\CategoryController@show');
-
-Route::post('/contact-form', 'Website\ContactFormController@store');
-
-Route::get('/courses', 'Website\CategoryController@index');
-Route::get('/courses/{id}', 'Website\CourseController@show');
-
-Route::get('/pages/{slug}', 'Website\PageController@show');
-
-Route::post('/purchase', 'Website\CourseController@purchase');
-
-Route::post('/course/search', 'Website\CourseController@searchCourse');
-
-
-
-
-//Route::post('test', function (\Illuminate\Http\Request $request){
-//    $attributes = $request->all();
-//    $client = (new VideoTileService());
-//    $user = $client->createUser($attributes['first_name'], $attributes['last_name'], $attributes['email'], $attributes['telephone']);
-//    dd(json_decode($user, true));
-//});
-
 

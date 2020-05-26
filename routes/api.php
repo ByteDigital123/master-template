@@ -42,26 +42,6 @@ Route::group(['middleware' => 'auth:admin_api'], function () {
     Route::put('admin-users/{id}', 'Api\AdminUserController@update');
     Route::delete('admin-users', 'Api\AdminUserController@destroy');
 
-    Route::get('providers', 'Api\ProviderController@index');
-
-    Route::get('categories', 'Api\CategoryController@index');
-    Route::get('categories/{id}', 'Api\CategoryController@show');
-    Route::post('categories', 'Api\CategoryController@store');
-    Route::put('categories/{id}', 'Api\CategoryController@update');
-    Route::delete('categories', 'Api\CategoryController@destroy');
-
-    Route::get('providers', 'Api\ProviderController@index');
-    Route::get('providers/{id}', 'Api\ProviderController@show');
-    Route::post('providers', 'Api\ProviderController@store');
-    Route::put('providers/{id}', 'Api\ProviderController@update');
-    Route::delete('providers', 'Api\ProviderController@destroy');
-
-    Route::get('courses', 'Api\CourseController@index');
-    Route::get('courses/{id}', 'Api\CourseController@show');
-    Route::post('courses', 'Api\CourseController@store');
-    Route::put('courses/{id}', 'Api\CourseController@update');
-    Route::delete('courses', 'Api\CourseController@destroy');
-
     // PAGES
     Route::get('pages', 'Api\PageController@index');
     Route::get('pages/{id}', 'Api\PageController@show');
@@ -69,20 +49,6 @@ Route::group(['middleware' => 'auth:admin_api'], function () {
     Route::put('pages/{id}', 'Api\PageController@update');
     Route::delete('pages', 'Api\PageController@destroy');
 
-    Route::get('transactions', 'Api\TransactionController@index');
-    Route::get('transactions/{id}', 'Api\TransactionController@show');
-    Route::put('transactions/{id}', 'Api\TransactionController@update');
-
-    Route::get('contact-forms', 'Api\ContactFormController@index');
-    Route::get('contact-forms/{id}', 'Api\ContactFormController@show');
-    Route::put('contact-forms/{id}', 'Api\ContactFormController@update');
-    Route::delete('contact-forms', 'Api\ContactFormController@destroy');
-
-    Route::get('users', 'Api\UserController@index');
-    Route::get('users/{id}', 'Api\UserController@show');
-    Route::post('users', 'Api\UserController@store');
-    Route::put('users/{id}', 'Api\UserController@update');
-    Route::delete('users', 'Api\UserController@destroy');
 
 });
 
