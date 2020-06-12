@@ -53,6 +53,13 @@
       'Image' => 'Intervention\\Image\\Facades\\Image',
     ),
   ),
+  'laravel-shift/blueprint' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Blueprint\\BlueprintServiceProvider',
+    ),
+  ),
   'laravel/passport' => 
   array (
     'providers' => 
