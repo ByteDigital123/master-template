@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Providers\Laravel;
+namespace App\Providers\;
 
-use App\Services\TransactionService;
+use App\Services\UserService;
 use Illuminate\Support\ServiceProvider;
 
-class TransactionServiceProvider extends ServiceProvider
+class UserServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -23,6 +23,8 @@ class TransactionServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->app->bind(UserService::class, function ($app) {
+            return new UserService($app->make('App\Repositories\User\UserInterface'));
+        });
     }
 }
