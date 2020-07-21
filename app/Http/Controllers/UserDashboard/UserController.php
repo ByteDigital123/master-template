@@ -5,49 +5,18 @@ namespace App\Http\Controllers\UserDashboard;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserDashboard\User\StoreUserRequest;
 use App\Http\Requests\UserDashboard\User\UpdateUserRequest;
-use App\Http\Resources\UserDashboard\User\CurrentUserResource;
-use App\Http\Resources\UserDashboard\User\OverviewResource;
 use App\Http\Resources\UserDashboard\User\UserResource;
-use App\Notifications\User\AccountDeleted;
-use App\Notifications\User\PersonalDetailsUpdated;
-use App\Services\AddressService;
 use App\Services\UserService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
     protected $service;
-    protected $addressService;
 
-    public function __construct(
-        UserService $service,
-        AddressService $addressService
-    ){
+    public function __construct(UserService $service)
+    {
         $this->service = $service;
-        $this->addressService = $addressService;
-    }
-
-    /**
-     * Display the current user details
-     *
-     * @return CurrentUserResource
-     */
-    public function currentUser()
-    {
-        return new CurrentUserResource($this->service->getCurrentUser());
-    }
-
-    /**
-     * Display overview page
-     *
-     * @return OverviewResource
-     */
-    public function overview()
-    {
-        return new OverviewResource($this->service->getCurrentUser());
     }
 
     /**
@@ -57,7 +26,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return UserResource::collection($this->service->getAll());
+        return UserResource::collection($this->service->get());
     }
 
     /**
@@ -70,7 +39,14 @@ class UserController extends Controller
     {
         $attributes = $request->all();
 
-        return $this->service->store($attributes);
+        try{
+            $this->service->store($attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -79,21 +55,10 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        return new UserResource($this->service->getCurrentUser());
+        return new UserResource($this->service->getById($id));
     }
-
-
-    public function updatePassword(Request $request)
-    {
-        $attributes = $request->all();
-
-        $this->service->updatePassword($attributes);
-
-        return response()->success('This action has been completed successfully');
-    }
-
 
     /**
      * Update the specified resource in storage.
@@ -102,21 +67,17 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateUserRequest $request)
+    public function update($id, UpdateUserRequest $request)
     {
         $attributes = $request->all();
 
         try{
-            $this->addressService->update($this->service->getCurrentUser()->address_id, $attributes['address']);
-            $this->service->update($this->service->getCurrentUser()->id, $attributes['user']);
-
-            $user = $this->service->getCurrentUser();
-            $user->notify(new PersonalDetailsUpdated($user));
+            $this->service->update($id, $attributes);
 
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
     }
 
@@ -130,8 +91,14 @@ class UserController extends Controller
     {
         $attributes = $request->json()->all();
 
-        $this->service->destroy($attributes);
-        return response()->success('Your account has been deleted successfully');
+        try{
+            $this->service->deleteMultiple($attributes['ids']);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
 }

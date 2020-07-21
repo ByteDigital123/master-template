@@ -3,19 +3,15 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\AdminUser\StoreAdminUserRequest;
-use App\Http\Requests\Api\AdminUser\UpdateAdminUserRequest;
-use App\Http\Resources\Api\AdminUser\AdminUserResource;
-use App\Http\SearchFilters\Api\AdminUser\AdminUserSearch;
-use App\Models\AdminUser;
+use App\Http\Requests\Website\AdminUser\StoreAdminUserRequest;
+use App\Http\Requests\Website\AdminUser\UpdateAdminUserRequest;
+use App\Http\Resources\AdminUser\AdminUserResource;
 use App\Services\AdminUserService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 class AdminUserController extends Controller
 {
-
     protected $service;
 
     public function __construct(AdminUserService $service)
@@ -24,25 +20,13 @@ class AdminUserController extends Controller
     }
 
     /**
-     * Display the current user details
-     *
-     * @return CurrentUserResource
-     */
-    public function currentUser()
-    {
-        return new AdminUserResource(Auth::guard('admin_api')->user());
-    }
-
-    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        $this->authorize('list', AdminUser::class);
-        return AdminUserResource::collection(AdminUserSearch::apply($request));
-
+        return AdminUserResource::collection($this->service->get());
     }
 
     /**
@@ -53,18 +37,16 @@ class AdminUserController extends Controller
      */
     public function store(StoreAdminUserRequest $request)
     {
-        $this->authorize('create', AdminUser::class);
-
         $attributes = $request->all();
 
         try{
             $this->service->store($attributes);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
-
     }
 
     /**
@@ -75,7 +57,6 @@ class AdminUserController extends Controller
      */
     public function show($id)
     {
-        $this->authorize('view', AdminUser::class);
         return new AdminUserResource($this->service->getById($id));
     }
 
@@ -88,16 +69,15 @@ class AdminUserController extends Controller
      */
     public function update($id, UpdateAdminUserRequest $request)
     {
-        $this->authorize('update', AdminUser::class);
-
         $attributes = $request->all();
 
         try{
             $this->service->update($id, $attributes);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
     }
 
@@ -109,17 +89,16 @@ class AdminUserController extends Controller
      */
     public function destroy(Request $request)
     {
-        $this->authorize('delete', AdminUser::class);
+        $attributes = $request->json()->all();
 
         try{
-            $attributes = $request->json()->all();
-            $this->service->destroy($attributes);
+            $this->service->deleteMultiple($attributes['ids']);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
-
     }
 
 }

@@ -10,10 +10,10 @@ use App\Http\SearchFilters\Api\EmailVerification\EmailVerificationSearch;
 use App\Models\EmailVerification;
 use App\Services\EmailVerificationService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class EmailVerificationController extends Controller
 {
-
     protected $service;
 
     public function __construct(EmailVerificationService $service)
@@ -45,7 +45,14 @@ class EmailVerificationController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->create($attributes);
+        try{
+            $this->service->store($attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -73,7 +80,14 @@ class EmailVerificationController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->update($id, $attributes);
+        try{
+            $this->service->update($id, $attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -88,7 +102,14 @@ class EmailVerificationController extends Controller
 
         $attributes = $request->json()->all();
 
-        return $this->service->delete($attributes);
+        try{
+            $this->service->deleteMultiple($attributes['id']);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
 }

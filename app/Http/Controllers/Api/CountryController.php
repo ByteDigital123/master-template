@@ -10,10 +10,10 @@ use App\Http\SearchFilters\Api\Country\CountrySearch;
 use App\Models\Country;
 use App\Services\CountryService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class CountryController extends Controller
 {
-
     protected $service;
 
     public function __construct(CountryService $service)
@@ -45,7 +45,14 @@ class CountryController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->create($attributes);
+        try{
+            $this->service->store($attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -73,7 +80,14 @@ class CountryController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->update($id, $attributes);
+        try{
+            $this->service->update($id, $attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -88,7 +102,14 @@ class CountryController extends Controller
 
         $attributes = $request->json()->all();
 
-        return $this->service->delete($attributes);
+        try{
+            $this->service->deleteMultiple($attributes['id']);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
 }

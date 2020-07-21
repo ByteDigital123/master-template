@@ -8,6 +8,7 @@ use App\Http\Requests\UserDashboard\Address\UpdateAddressRequest;
 use App\Http\Resources\UserDashboard\Address\AddressResource;
 use App\Services\AddressService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class AddressController extends Controller
 {
@@ -25,7 +26,7 @@ class AddressController extends Controller
      */
     public function index()
     {
-        return AddressResource::collection($this->service->getAll());
+        return AddressResource::collection($this->service->get());
     }
 
     /**
@@ -38,7 +39,14 @@ class AddressController extends Controller
     {
         $attributes = $request->all();
 
-        return $this->service->store($attributes);
+        try{
+            $this->service->store($attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -63,7 +71,14 @@ class AddressController extends Controller
     {
         $attributes = $request->all();
 
-        return $this->service->update($id, $attributes);
+        try{
+            $this->service->update($id, $attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -76,7 +91,14 @@ class AddressController extends Controller
     {
         $attributes = $request->json()->all();
 
-        return $this->service->delete($attributes);
+        try{
+            $this->service->deleteMultiple($attributes['ids']);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
 }

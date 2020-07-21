@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Log;
 
 class BlogController extends Controller
 {
-
     protected $service;
 
     public function __construct(BlogService $service)
@@ -46,7 +45,14 @@ class BlogController extends Controller
 
         $attributes = $request->all();
 
-        return $this->service->store($attributes);
+        try{
+            $this->service->store($attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -76,10 +82,11 @@ class BlogController extends Controller
 
         try{
             $this->service->update($id, $attributes);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
     }
 
@@ -96,12 +103,14 @@ class BlogController extends Controller
         $attributes = $request->json()->all();
 
         try{
-            $this->service->destroy($attributes);
+            $this->service->deleteMultiple($attributes['id']);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
     }
 
 }
+

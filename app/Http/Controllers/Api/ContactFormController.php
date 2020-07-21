@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Log;
 
 class ContactFormController extends Controller
 {
-
     protected $service;
 
     public function __construct(ContactFormService $service)
@@ -35,6 +34,28 @@ class ContactFormController extends Controller
     }
 
     /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(StoreContactFormRequest $request)
+    {
+        $this->authorize('create', ContactForm::class);
+
+        $attributes = $request->all();
+
+        try{
+            $this->service->store($attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
+    }
+
+    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -46,6 +67,28 @@ class ContactFormController extends Controller
         return new ContactFormResource($this->service->getById($id));
     }
 
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update($id, UpdateContactFormRequest $request)
+    {
+        $this->authorize('update', ContactForm::class);
+
+        $attributes = $request->all();
+
+        try{
+            $this->service->update($id, $attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
+    }
 
     /**
      * Remove the specified resource from storage.
@@ -60,11 +103,12 @@ class ContactFormController extends Controller
         $attributes = $request->json()->all();
 
         try{
-            $this->service->destroy($attributes);
+            $this->service->deleteMultiple($attributes['id']);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
     }
 

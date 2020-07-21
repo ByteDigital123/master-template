@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Http\Resources\Page;
+namespace App\Http\Resources\UserDashboard\Page;
 
-use Carbon\Carbon;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class PageResource extends JsonResource

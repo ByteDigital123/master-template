@@ -8,6 +8,7 @@ use App\Http\Requests\UserDashboard\Blog\UpdateBlogRequest;
 use App\Http\Resources\UserDashboard\Blog\BlogResource;
 use App\Services\BlogService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class BlogController extends Controller
 {
@@ -25,7 +26,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return BlogResource::collection($this->service->getAll());
+        return BlogResource::collection($this->service->get());
     }
 
     /**
@@ -38,7 +39,14 @@ class BlogController extends Controller
     {
         $attributes = $request->all();
 
-        return $this->service->store($attributes);
+        try{
+            $this->service->store($attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -63,7 +71,14 @@ class BlogController extends Controller
     {
         $attributes = $request->all();
 
-        return $this->service->update($id, $attributes);
+        try{
+            $this->service->update($id, $attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -76,7 +91,14 @@ class BlogController extends Controller
     {
         $attributes = $request->json()->all();
 
-        return $this->service->delete($attributes);
+        try{
+            $this->service->deleteMultiple($attributes['ids']);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
 }

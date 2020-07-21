@@ -6,7 +6,7 @@
       0 => 'Appstract\\ResponseMacros\\ResponseMacrosServiceProvider',
     ),
   ),
-  'bytedigital123/scaffold' => 
+  'bytedigital123/pixel-boilerplate' => 
   array (
     'providers' => 
     array (

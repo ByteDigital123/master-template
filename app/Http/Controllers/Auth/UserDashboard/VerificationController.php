@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Auth\UserDashboard;
 
 use App\Http\Controllers\Controller;
+use App\Notifications\User\Welcome;
 use App\Providers\RouteServiceProvider;
+use EmailVerification;
 use Illuminate\Foundation\Auth\VerifiesEmails;
+use Illuminate\Support\Facades\Log;
 
 class VerificationController extends Controller
 {
@@ -38,5 +41,25 @@ class VerificationController extends Controller
         $this->middleware('auth');
         $this->middleware('signed')->only('verify');
         $this->middleware('throttle:6,1')->only('verify', 'resend');
+    }
+
+    public function verifyEmailAddress($token)
+    {
+        try{
+            // FIND MATCHING VERIFICATION CODE
+            $user = EmailVerification::where('verification_code', $token)->first()->user();
+
+            // SEND WELCOME EMAIL TO USER
+            $user->notify(new Welcome($user));
+
+            // RETURN RESPONSE
+            return response()->success('Your email has been verified');
+
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed');
+        }
+
+
     }
 }

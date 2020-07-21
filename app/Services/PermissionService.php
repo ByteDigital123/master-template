@@ -2,14 +2,14 @@
 
 namespace App\Services;
 
+use App\Models\Permission;
 use Illuminate\Support\Str;
-use App\Repositories\Permission\PermissionInterface;
 
 class PermissionService
 {
     protected $permission;
 
-    public function __construct(PermissionInterface $permission)
+    public function __construct(Permission $permission)
     {
         $this->permission = $permission;
     }

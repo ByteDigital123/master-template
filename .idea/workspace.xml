@@ -2,11 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42720b84-48a2-492a-9f97-b392424ab08e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cpd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cpd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ContactFormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ContactFormController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ContentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ContentTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ContentTypeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EmailVerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EmailVerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TransactionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/AddressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/AddressController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContactFormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContactFormController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContentTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContentTypeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/CountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/CountryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/EmailVerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/EmailVerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/TransactionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Website/AdminUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Website/AdminUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Website/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Website/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserDashboard/Page/StorePageRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserDashboard/Page/StorePageRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserDashboard/Page/UpdatePageRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserDashboard/Page/UpdatePageRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Website/ContactForm/StoreContactFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Website/ContactForm/StoreContactFormRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserDashboard/Page/PageCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/UserDashboard/Page/PageCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserDashboard/Page/PageResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/UserDashboard/Page/PageResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/UserDashboard/User/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/UserDashboard/User/UserResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/User/ForgottenPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/User/ForgottenPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ContactForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ContactForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Content.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ContentType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ContentType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Country.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/EmailVerification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/EmailVerification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/TransactionStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/TransactionStatus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/User/AccountDeleted.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/User/AccountDeleted.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/User/EmailConfirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/User/EmailConfirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/User/PasswordUpdated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/User/PasswordUpdated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/User/Welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/User/Welcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/UserServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/UserServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/AddressService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/AddressService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/AdminUserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/AdminUserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/BlogService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/BlogService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/ContactFormService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ContactFormService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/ContentService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ContentService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/ContentTypeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ContentTypeService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/CountryService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/CountryService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/EmailVerificationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/EmailVerificationService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/ModelHasPermissionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ModelHasPermissionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/ModelHasRoleService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ModelHasRoleService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/PageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PageService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/PermissionGroupService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PermissionGroupService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/PermissionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PermissionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TransactionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/TransactionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/UserService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ContactFormsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ContactFormsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ContentTypesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ContentTypesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CountriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CountriesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/TransactionsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TransactionsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/user/AccountDeleted.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/user/AccountDeleted.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/user/EmailVerification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/user/EmailVerification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/user/Welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/user/Welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user-dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user-dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,35 +215,63 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1528090294">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="2" />
+          <entry key="json" value="2" />
+          <entry key="php" value="240" />
+          <entry key="stub" value="1" />
+          <entry key="yaml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Blade" value="3" />
+          <entry key="JSON" value="2" />
+          <entry key="PHP" value="237" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="2" />
+          <entry key="gitignore" value="33" />
+          <entry key="php" value="1977" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Blade" value="229" />
+          <entry key="PHP" value="1748" />
+          <entry key="PLAIN_TEXT" value="35" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="22" column="84" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+            <state relative-caret-position="285">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+        <entry file="file://$PROJECT_DIR$/vendor/bytedigital123/pixel-boilerplate/src/Console/Commands/GeneratePolicyAppConfig.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#57#112#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -172,15 +279,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="242" selection-start-line="242" selection-end-line="242" />
+            <state relative-caret-position="-448">
+              <caret line="184" column="11" selection-start-line="184" selection-start-column="11" selection-end-line="184" selection-end-column="11" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/AdminUser.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -245,57 +347,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_110429_add_modules_to_courses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_111443_create_content_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Content.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_14_120143_create_courses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_115100_update_courses_to_drop_main_image_on_courses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_115204_update_image_on_course_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_115323_update_main_image_on_course_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_113217_update_main_image_on_courses_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Transaction.php" />
-        <option value="$PROJECT_DIR$/app/Services/UserService.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_134700_create_pages_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_133429_update_transactions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_04_21_135601_create_pages_json_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Page/StorePageRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Page/UpdatePageRequest.php" />
-        <option value="$PROJECT_DIR$/app/Models/Page.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/AdminUser/EloquentAdminUserRepository.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Website/PageController.php" />
-        <option value="$PROJECT_DIR$/app/Services/PageService.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Provider/StoreProviderRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/Api/Provider/UpdateProviderRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ProviderController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Category.php" />
-        <option value="$PROJECT_DIR$/app/Services/SagePaymentGateway.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php" />
-        <option value="$PROJECT_DIR$/app/Models/Course.php" />
-        <option value="$PROJECT_DIR$/app/Services/CourseService.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CourseController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Api/Course/CourseResource.php" />
-        <option value="$PROJECT_DIR$/resources/views/emails/admin/CoursePurchased.blade.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseSingleResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/Website/Course/FeaturedCourseResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_05_01_142513_add_fields_to_contact_forms_table.php" />
-        <option value="$PROJECT_DIR$/app/Notifications/Admin/ContactFormSubmitted.php" />
-        <option value="$PROJECT_DIR$/resources/views/emails/admin/ContactFormSubmitted.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/ContactForm.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Website/ContactFormController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/routes/user-dashboard.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ImageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Website/ImageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdminUserController.php" />
+        <option value="$PROJECT_DIR$/app/Services/PermissionService.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Website/AdminUserController.php" />
+        <option value="$PROJECT_DIR$/app/Services/AdminUserService.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Website/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Website/ContactForm/StoreContactFormRequest.php" />
+        <option value="$PROJECT_DIR$/routes/user-dashboard.php" />
+        <option value="$PROJECT_DIR$/app/Http/SearchFilters/Api/ContactForm/ContactFormSearch.php" />
+        <option value="$PROJECT_DIR$/app/Models/ContactForm.php" />
+        <option value="$PROJECT_DIR$/app/Models/Content.php" />
+        <option value="$PROJECT_DIR$/app/Models/ContentType.php" />
+        <option value="$PROJECT_DIR$/app/Models/Country.php" />
+        <option value="$PROJECT_DIR$/app/Models/EmailVerification.php" />
+        <option value="$PROJECT_DIR$/app/Models/Page.php" />
+        <option value="$PROJECT_DIR$/app/Models/Transaction.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
+        <option value="$PROJECT_DIR$/app/Models/TransactionStatus.php" />
+        <option value="$PROJECT_DIR$/app/Services/AddressService.php" />
+        <option value="$PROJECT_DIR$/app/Services/BlogService.php" />
+        <option value="$PROJECT_DIR$/app/Services/ContactFormService.php" />
+        <option value="$PROJECT_DIR$/app/Services/ContentService.php" />
+        <option value="$PROJECT_DIR$/app/Services/ContentTypeService.php" />
+        <option value="$PROJECT_DIR$/app/Services/CountryService.php" />
+        <option value="$PROJECT_DIR$/app/Services/EmailVerificationService.php" />
+        <option value="$PROJECT_DIR$/app/Services/TransactionService.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BlogController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ContactFormController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ContentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ContentTypeController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EmailVerificationController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TransactionController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/AddressController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/BlogController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContactFormController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContentTypeController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/CountryController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/EmailVerificationController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/UserDashboard/Page/StorePageRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/UserDashboard/Page/UpdatePageRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/UserDashboard/Page/PageResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/UserDashboard/Page/PageCollection.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/PageController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/TransactionController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/UserDashboard/User/UserResource.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/vendor/bytedigital123/pixel-boilerplate/src/Console/Commands/GeneratePolicyAppConfig.php" />
       </list>
     </option>
   </component>
@@ -310,145 +412,146 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
-      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
-      <path value="$PROJECT_DIR$/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
-      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
-      <path value="$PROJECT_DIR$/vendor/league/commonmark-ext-table" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/opis/closure" />
-      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
-      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
-      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-responsecache" />
-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
-      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
-      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
-      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
-      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
-      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
-      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
-      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
-      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
-      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/vendor/bytedigital123/scaffold" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/vendor/oscarafdev/laravel-4-generators" />
-      <path value="$PROJECT_DIR$/vendor/pursehouse/modeler-laravel-eloquent" />
       <path value="$PROJECT_DIR$/vendor/orangehill/iseed" />
       <path value="$PROJECT_DIR$/vendor/oscarafdev/migrations-generator" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
-      <path value="$PROJECT_DIR$/vendor/appstract/laravel-response-macros" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/oscarafdev/laravel-4-generators" />
+      <path value="$PROJECT_DIR$/vendor/pursehouse/modeler-laravel-eloquent" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/consoletvs/invoices" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
-      <path value="$PROJECT_DIR$/vendor/consoletvs/invoices" />
-      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
-      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
-      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-cors" />
-      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
-      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
-      <path value="$PROJECT_DIR$/vendor/laminas/laminas-diactoros" />
-      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
-      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
-      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
-      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
-      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
-      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
-      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
-      <path value="$PROJECT_DIR$/vendor/league/event" />
-      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
-      <path value="$PROJECT_DIR$/vendor/intervention/image" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
       <path value="$PROJECT_DIR$/vendor/laravel-shift/blueprint" />
-      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/bytedigital123/pixel-boilerplate" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-responsecache" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-diactoros" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/appstract/laravel-response-macros" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="516" />
-    <option name="y" value="23" />
-    <option name="width" value="1164" />
-    <option name="height" value="795" />
+    <option name="y" value="152" />
+    <option name="width" value="1337" />
+    <option name="height" value="854" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -463,18 +566,75 @@
         <subPane>
           <expand>
             <path>
-              <item name="digital-projection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-projection" type="462c0819:PsiDirectoryNode" />
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="digital-projection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-projection" type="462c0819:PsiDirectoryNode" />
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="digital-projection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digital-projection" type="462c0819:PsiDirectoryNode" />
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bytedigital123" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bytedigital123" type="462c0819:PsiDirectoryNode" />
+              <item name="pixel-boilerplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bytedigital123" type="462c0819:PsiDirectoryNode" />
+              <item name="pixel-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bytedigital123" type="462c0819:PsiDirectoryNode" />
+              <item name="pixel-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bytedigital123" type="462c0819:PsiDirectoryNode" />
+              <item name="pixel-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
+              <item name="Commands" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -483,6 +643,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/alexetel/Documents/construction_discount/routes/api.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Website" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -491,16 +652,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Resources/UserDashboard" />
+      <recent name="$PROJECT_DIR$/app/Http/Requests/UserDashboard" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/UserDashboard" />
+      <recent name="$PROJECT_DIR$/app/Http/Resources/Api" />
+      <recent name="$PROJECT_DIR$/app/Http/Requests/Api" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Requests/Api" />
-      <recent name="$PROJECT_DIR$/app/Services" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources/Website/Category" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources/Website/Course" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -536,11 +697,12 @@
       <workItem from="1590477797737" duration="485000" />
       <workItem from="1591710757086" duration="226000" />
       <workItem from="1591956783267" duration="1918000" />
+      <workItem from="1595322429503" duration="15039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163119000" />
+    <option name="totallyTimeSpent" value="178158000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,12 +714,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="516" y="23" width="1164" height="795" extended-state="0" />
+    <frame x="0" y="152" width="1337" height="854" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.24777183" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.27567568" />
       <window_info id="Structure" order="1" sideWeight="0.5009141" side_tool="true" weight="0.230658" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Thumbnails" weight="0.32900944" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -568,7 +732,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tinkerwell" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.53200567" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3766404" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -607,148 +771,362 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryOutlineResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Category/CategoryResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CategoryController.php" />
-    <entry file="file://$PROJECT_DIR$/config/sagepay.php">
+    <entry file="file://$PROJECT_DIR$/app/Services/UserService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-end-line="9" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-end-line="139" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/Provider/StoreProviderRequest.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/Provider/UpdateProviderRequest.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProviderController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Category/CategoryResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Api/Category/CategorySearch.php" />
-    <entry file="file://$PROJECT_DIR$/app/Models/Category.php" />
-    <entry file="file://$PROJECT_DIR$/app/Services/SagePaymentGateway.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Course/CourseInterface.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Course/CourseResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Notifications/Admin/CoursePurchased.php" />
-    <entry file="file://$PROJECT_DIR$/resources/emails/admin/CoursePurchased.blade.php" />
-    <entry file="file://$PROJECT_DIR$/app/Models/Course.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/CourseSingleResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Services/CourseService.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_05_01_142513_add_fields_to_contact_forms_table.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/CourseController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Course/EloquentCourseRepository.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Course/FeaturedCourseResource.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CourseController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Repositories/ContactForm/EloquentContactFormRepository.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/ContactFormController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Models/ContactForm.php" />
-    <entry file="file://$PROJECT_DIR$/app/Notifications/Admin/ContactFormSubmitted.php" />
-    <entry file="file://$PROJECT_DIR$/app/Services/ContactFormService.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/admin/CoursePurchased.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/admin/ContactFormSubmitted.blade.php" />
-    <entry file="file://$PROJECT_DIR$/.env" />
-    <entry file="file://$PROJECT_DIR$/vendor/bytedigital123/scaffold/src/Console/Commands/ScaffoldSingle.php" />
-    <entry file="file://$PROJECT_DIR$/config/airlock.php" />
-    <entry file="file://$PROJECT_DIR$/routes/user-dashboard.php">
+    <entry file="file://$PROJECT_DIR$/app/Services/AddressService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        <state relative-caret-position="195">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BlogService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/ContactFormService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/ContentService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/ContactForm/StoreContactFormRequest.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="e#7#412#0#PHP" expanded="true" />
+            <element signature="e#44#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/app/Services/TransactionService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        <state relative-caret-position="330">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/ImageController.php">
+    <entry file="file://$PROJECT_DIR$/app/Services/EmailVerificationService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/CountryService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/ContentTypeService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ContactFormController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ContentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ContentTypeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CountryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Country/CountryResource.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Page/PageResource.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/Transaction/TransactionResource.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminUserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Website/AdminUserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        <state>
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ImageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/AdminUser/StoreAdminUserRequest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/Api/EmailVerification/EmailVerificationResource.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
-            <element signature="e#57#112#0#PHP" expanded="true" />
+            <element signature="e#44#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/AdminUser.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/TransactionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="109" column="12" lean-forward="true" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EmailVerificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContactFormController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#54#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#54#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/AddressController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserDashboard/Country/StoreCountryRequest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/Website/User/UserSearch.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserDashboard/Country/StoreCountryRequest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/SearchableTrait.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContentTypeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/SearchFilters/ApiSearchableTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+        <state relative-caret-position="465">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/UserServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/CountryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="18" selection-start-line="17" selection-end-line="18" />
+        <state relative-caret-position="15">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/EmailVerificationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="84" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+        <state relative-caret-position="-71">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserDashboard/Page/UpdatePageRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserDashboard/Page/StorePageRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserDashboard/Page/PageCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserDashboard/Page/PageResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserDashboard/User/UserCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserDashboard/User/UserResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-956">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/TransactionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="49" lean-forward="true" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding>
+            <element signature="e#54#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-671">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <element signature="e#54#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="43" selection-end-line="10042" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1018" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="242" selection-start-line="242" selection-end-line="242" />
+        <state relative-caret-position="-448">
+          <caret line="184" column="11" selection-start-line="184" selection-start-column="11" selection-end-line="184" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="285">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bytedigital123/pixel-boilerplate/src/Console/Commands/GeneratePolicyAppConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>

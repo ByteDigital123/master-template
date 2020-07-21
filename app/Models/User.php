@@ -8,6 +8,7 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
 
 /**
  * Class User
@@ -26,18 +27,30 @@ use Illuminate\Notifications\Notifiable;
  */
 class User extends Authenticatable
 {
-    use Notifiable;
-
-    protected $hidden = [
-
-    ];
+    use Notifiable, HasApiTokens;
 
     protected $fillable = [
         'first_name',
         'last_name',
         'username',
+        'date_of_birth',
+        'address_id',
+        'password',
         'email',
+        'email_verified'
+    ];
+
+    protected $casts = [
+        'email_verified' => 'bool'
+    ];
+
+    protected $hidden = [
         'password'
     ];
+
+    public function address()
+    {
+        return $this->belongsTo(Address::class, 'address_id', 'id');
+    }
 
 }

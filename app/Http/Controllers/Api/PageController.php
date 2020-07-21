@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Log;
 
 class PageController extends Controller
 {
-
     protected $service;
 
     public function __construct(PageService $service)
@@ -48,10 +47,11 @@ class PageController extends Controller
 
         try{
             $this->service->store($attributes);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
     }
 
@@ -76,12 +76,13 @@ class PageController extends Controller
      */
     public function update($id, UpdatePageRequest $request)
     {
-//        $this->authorize('update', Page::class);
+        $this->authorize('update', Page::class);
 
         $attributes = $request->all();
 
         try{
             $this->service->update($id, $attributes);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
@@ -102,11 +103,12 @@ class PageController extends Controller
         $attributes = $request->json()->all();
 
         try{
-            $this->service->destroy($attributes);
+            $this->service->deleteMultiple($attributes['id']);
+
             return response()->success('This action has been completed successfully');
         }catch (\Exception $e){
             Log::info($e->getMessage());
-            return response()->error('This action could not be completed');
+            return response()->error('This action could not be completed - ' . $e->getMessage());
         }
     }
 

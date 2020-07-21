@@ -2,8 +2,7 @@
 
 namespace App\Mail\User;
 
-use App\User;
-use App\PasswordReset;
+use App\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;

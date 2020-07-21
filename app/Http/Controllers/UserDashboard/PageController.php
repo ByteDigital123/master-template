@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Website;
+namespace App\Http\Controllers\UserDashboard;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Page\StorePageRequest;
-use App\Http\Requests\Page\UpdatePageRequest;
-use App\Http\Resources\Page\PageResource;
+use App\Http\Requests\UserDashboard\Page\StorePageRequest;
+use App\Http\Requests\UserDashboard\Page\UpdatePageRequest;
+use App\Http\Resources\UserDashboard\Page\PageResource;
 use App\Services\PageService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class PageController extends Controller
 {
@@ -25,7 +26,27 @@ class PageController extends Controller
      */
     public function index()
     {
-        return PageResource::collection($this->service->getAll());
+        return PageResource::collection($this->service->get());
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(StorePageRequest $request)
+    {
+        $attributes = $request->all();
+
+        try{
+            $this->service->store($attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
     /**
@@ -36,7 +57,48 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        return new PageResource($this->service->getBySlug($id));
+        return new PageResource($this->service->getById($id));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update($id, UpdatePageRequest $request)
+    {
+        $attributes = $request->all();
+
+        try{
+            $this->service->update($id, $attributes);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Request $request)
+    {
+        $attributes = $request->json()->all();
+
+        try{
+            $this->service->deleteMultiple($attributes['ids']);
+
+            return response()->success('This action has been completed successfully');
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+            return response()->error('This action could not be completed - ' . $e->getMessage());
+        }
     }
 
 }

@@ -11,10 +11,24 @@
 |
 */
 
-Route::group(['middleware' => 'auth:web'], function () {
+Route::group(['middleware' => 'auth:user_api'], function () {
 
-    // PUT ALL USER DASHBOARD ROUTES IN HERE BASTARD
+    // CURRENT USER
+    Route::get('/auth/current', 'UserDashboard\UserController@currentUser');
+
+    // DELETE ACCOUNT
+    Route::delete('delete-account', 'UserDashboard\UserController@destroy');
+
+    // UPDATE PASSWORD
+    Route::put('update-password', 'UserDashboard\UserController@updatePassword');
+
+    // TRANSACTIONS
+    Route::get('transactions', 'UserDashboard\TransactionController@index');
+    Route::get('transactions/{id}', 'UserDashboard\TransactionController@show');
+
+
 
 });
+
 
 

@@ -169,12 +169,6 @@ return [
         App\Providers\Laravel\ModelHasRoleServiceProvider::class,
         App\Providers\Laravel\PermissionGroupServiceProvider::class,
         App\Providers\Laravel\ProviderServiceProvider::class,
-        App\Repositories\ModelHasPermission\ModelHasPermissionServiceProvider::class,
-        App\Repositories\ModelHasRole\ModelHasRoleServiceProvider::class,
-        App\Repositories\PermissionGroup\PermissionGroupServiceProvider::class,
-        App\Repositories\Provider\ProviderServiceProvider::class,
-        App\Repositories\AdminUser\AdminUserServiceProvider::class,
-        App\Repositories\Page\PageServiceProvider::class,
 
 
         /*
@@ -189,7 +183,6 @@ return [
         /*
          * Client Service Providers...
          */
-        \App\Repositories\Permission\PermissionRepoServiceProvider::class
     ],
 
     /*

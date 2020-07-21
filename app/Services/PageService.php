@@ -2,47 +2,76 @@
 
 namespace App\Services;
 
-use App\Repositories\Page\PageInterface;
+use App\Models\Page;
 
 class PageService
 {
     protected $query;
 
-    public function __construct(PageInterface $model)
+    public function __construct(Page $model)
     {
         $this->model = $model;
     }
 
     /**
+     * count the model data
+     *
+     * @return
+     */
+    public function count($with = [])
+    {
+        return $this->model->with($with)->get();
+    }
+
+    /**
+     * get all of the model data
+     *
+     * @return
+     */
+    public function get($with = [])
+    {
+        return $this->model->with($with)->get();
+    }
+
+    /**
+     * get all of the model data
+     *
+     * @return
+     */
+    public function all($with = [])
+    {
+        return $this->model->with($with)->all();
+    }
+
+    /**
      * get all of the data from the repository
      *
-     * @return collection
+     * @return
      */
-    public function getAll()
+    public function paginated($num, $with = [])
     {
-        return $this->model->paginate(config('swell.pagination'));
+        return $this->model->with($with)->paginate($num);
+    }
+
+    /**
+     * get all of the data from the repository
+     *
+     * @return
+     */
+    public function orderBy($column, $value, $with = [])
+    {
+        return $this->with($with)->orderBy($column, $value);
     }
 
     /**
      * get a single row of data
      *
      * @param integer $id
-     * @return collection
+     * @return
      */
-    public function getById($id)
+    public function getById($id, $with = [])
     {
-        return $this->model->getById($id);
-    }
-
-    /**
-     * get a single row of data
-     *
-     * @param integer $id
-     * @return collection
-     */
-    public function getBySlug($slug)
-    {
-        return $this->model->where('slug', $slug)->get();
+        return $this->model->with($with)->find($id);
     }
 
     /**
@@ -50,13 +79,13 @@ class PageService
      *
      * @param date $from_date
      * @param date $to_date
-     * @return collection
+     * @return
      */
-    public function getBetweenDates($column, $from_date, $to_date)
+    public function getBetweenDates($column, $from_date, $to_date, $paginateAmount = 12)
     {
         return $this->model->where($column, $from_date, '>')
-                           ->where($column, $to_date, '<')
-                           ->paginate(config('swell.pagination'));
+            ->where($column, $to_date, '<')
+            ->paginate($paginateAmount);
     }
 
     /**
@@ -79,17 +108,32 @@ class PageService
      */
     public function update($id, $attributes)
     {
-        return $this->model->updateById($id, $attributes);
+        return $this->model->where('id', $id)->update($attributes);
     }
 
     /**
-     * delete the data
+     * delete single record
      *
      * @param array $attributes
      * @return void
      */
-    public function destroy($attributes)
+    public function delete($id)
     {
-        return $this->model->deleteMultipleById($attributes);
+        return $this->getById($id)->delete();
+    }
+
+    /**
+     * delete multiple records
+     *
+     * @param array $attributes
+     * @return void
+     */
+    public function deleteMultiple($ids)
+    {
+        foreach($ids AS $id){
+            $this->getById($id)->delete();
+        }
+
+        return true;
     }
 }

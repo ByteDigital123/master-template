@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\Page;
+namespace App\Http\Resources\UserDashboard\Page;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
