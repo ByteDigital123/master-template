@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/appstract/laravel-response-macros" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bytedigital123/pixel-boilerplate" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bytedigital123/generator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/consoletvs/invoices" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/defuse/php-encryption" />

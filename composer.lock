@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6658bf55d7a0effd8c3a04824108f850",
+    "content-hash": "43e2eba3d852ad471ae64cd059727708",
     "packages": [
         {
             "name": "appstract/laravel-response-macros",
@@ -63,17 +63,17 @@
             "time": "2018-01-22T14:59:49+00:00"
         },
         {
-            "name": "bytedigital123/pixel-boilerplate",
+            "name": "bytedigital123/generator",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ByteDigital123/pixel-boilerplate.git",
-                "reference": "deea5040748ed09028f048f49c7665dd6f79fe3e"
+                "url": "https://github.com/ByteDigital123/Generator.git",
+                "reference": "cde54118faa77eb0d763eee8ca35d9d2d66b4db2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ByteDigital123/pixel-boilerplate/zipball/deea5040748ed09028f048f49c7665dd6f79fe3e",
-                "reference": "deea5040748ed09028f048f49c7665dd6f79fe3e",
+                "url": "https://api.github.com/repos/ByteDigital123/Generator/zipball/cde54118faa77eb0d763eee8ca35d9d2d66b4db2",
+                "reference": "cde54118faa77eb0d763eee8ca35d9d2d66b4db2",
                 "shasum": ""
             },
             "require": {
@@ -83,16 +83,16 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Bytedigital123\\Scaffold\\ScaffoldServiceProvider"
+                        "Bytedigital123\\Generator\\GeneratorServiceProvider"
                     ],
                     "aliases": {
-                        "Scaffold": "Bytedigital123\\Scaffold\\ScaffoldFacade"
+                        "Generator": "Bytedigital123\\Generator\\GeneratorFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Bytedigital123\\Scaffold\\": "src"
+                    "Bytedigital123\\Generator\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -101,19 +101,19 @@
             ],
             "authors": [
                 {
-                    "name": "Chris Mills",
-                    "email": "chris@byte-digital.com",
+                    "name": "Alex Etel",
+                    "email": "alex@byte-digital.com",
                     "role": "Developer"
                 }
             ],
-            "description": "Laravel Pixel Boilerplate",
-            "homepage": "https://github.com/bytedigital123/pixel-boilerplate",
+            "description": "Laravel Generator",
+            "homepage": "https://github.com/bytedigital123/generator",
             "keywords": [
-                "boilerplate",
                 "bytedigital123",
+                "generator",
                 "pixel"
             ],
-            "time": "2020-07-21T12:14:36+00:00"
+            "time": "2020-07-21T15:36:32+00:00"
         },
         {
             "name": "consoletvs/invoices",
@@ -1490,16 +1490,16 @@
         },
         {
             "name": "laravel/passport",
-            "version": "v9.3.0",
+            "version": "v9.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/passport.git",
-                "reference": "724acaea99204728a1baf7b9b730bf97debbf94c"
+                "reference": "38d9ee08974fed5d41376a52a994eaca615138a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/passport/zipball/724acaea99204728a1baf7b9b730bf97debbf94c",
-                "reference": "724acaea99204728a1baf7b9b730bf97debbf94c",
+                "url": "https://api.github.com/repos/laravel/passport/zipball/38d9ee08974fed5d41376a52a994eaca615138a4",
+                "reference": "38d9ee08974fed5d41376a52a994eaca615138a4",
                 "shasum": ""
             },
             "require": {
@@ -1559,7 +1559,7 @@
                 "oauth",
                 "passport"
             ],
-            "time": "2020-06-30T20:21:17+00:00"
+            "time": "2020-07-21T15:16:20+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -7671,7 +7671,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "bytedigital123/pixel-boilerplate": 20,
+        "bytedigital123/generator": 20,
         "pursehouse/modeler-laravel-eloquent": 20
     },
     "prefer-stable": true,

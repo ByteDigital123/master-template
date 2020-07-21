@@ -10,7 +10,7 @@
     "require": {
         "php": "^7.2",
         "appstract/laravel-response-macros": "^1.0",
-        "bytedigital123/pixel-boilerplate": "dev-master",
+        "bytedigital123/generator": "dev-master",
         "consoletvs/invoices": "^1.6",
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^6.5",

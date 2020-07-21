@@ -6,15 +6,15 @@
       0 => 'Appstract\\ResponseMacros\\ResponseMacrosServiceProvider',
     ),
   ),
-  'bytedigital123/pixel-boilerplate' => 
+  'bytedigital123/generator' => 
   array (
     'providers' => 
     array (
-      0 => 'Bytedigital123\\Scaffold\\ScaffoldServiceProvider',
+      0 => 'Bytedigital123\\Generator\\GeneratorServiceProvider',
     ),
     'aliases' => 
     array (
-      'Scaffold' => 'Bytedigital123\\Scaffold\\ScaffoldFacade',
+      'Generator' => 'Bytedigital123\\Generator\\GeneratorFacade',
     ),
   ),
   'consoletvs/invoices' => 
