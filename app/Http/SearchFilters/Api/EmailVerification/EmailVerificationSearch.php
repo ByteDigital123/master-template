@@ -2,8 +2,8 @@
 
 namespace App\Http\SearchFilters\Api\EmailVerification;
 
-use App\Models\EmailVerification;
 use App\Http\SearchFilters\ApiSearchableTrait;
+use App\Models\EmailVerification;
 
 class EmailVerificationSearch
 {

@@ -68,12 +68,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ByteDigital123/Generator.git",
-                "reference": "cde54118faa77eb0d763eee8ca35d9d2d66b4db2"
+                "reference": "9d7723fba92a66ca54b7a45b3a14a12c72ffa681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ByteDigital123/Generator/zipball/cde54118faa77eb0d763eee8ca35d9d2d66b4db2",
-                "reference": "cde54118faa77eb0d763eee8ca35d9d2d66b4db2",
+                "url": "https://api.github.com/repos/ByteDigital123/Generator/zipball/9d7723fba92a66ca54b7a45b3a14a12c72ffa681",
+                "reference": "9d7723fba92a66ca54b7a45b3a14a12c72ffa681",
                 "shasum": ""
             },
             "require": {
@@ -113,7 +113,7 @@
                 "generator",
                 "pixel"
             ],
-            "time": "2020-07-21T15:36:32+00:00"
+            "time": "2020-07-21T15:41:20+00:00"
         },
         {
             "name": "consoletvs/invoices",

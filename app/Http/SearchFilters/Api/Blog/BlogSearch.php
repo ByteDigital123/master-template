@@ -2,8 +2,8 @@
 
 namespace App\Http\SearchFilters\Api\Blog;
 
-use App\Models\Blog;
 use App\Http\SearchFilters\ApiSearchableTrait;
+use App\Models\Blog;
 
 class BlogSearch
 {

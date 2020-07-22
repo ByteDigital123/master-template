@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Models\Address;
 
-class AddressService
+class AddressService extends BaseService
 {
     protected $query;
 
@@ -20,7 +20,7 @@ class AddressService
      */
     public function count($with = [])
     {
-        return $this->model->with($with)->get();
+        return $this->model->count();
     }
 
     /**
@@ -49,9 +49,9 @@ class AddressService
      * @return
      */
     public function paginated($num, $with = [])
-    {
-        return $this->model->with($with)->paginate($num);
-    }
+{
+    return $this->model->with($with)->paginate($num);
+}
 
     /**
      * get all of the data from the repository

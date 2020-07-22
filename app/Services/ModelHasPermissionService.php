@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Models\ModelHasPermission;
 
-class ModelHasPermissionService
+class ModelHasPermissionService extends BaseService
 {
     protected $query;
 
@@ -20,7 +20,7 @@ class ModelHasPermissionService
      */
     public function count($with = [])
     {
-        return $this->model->with($with)->get();
+        return $this->model->count();
     }
 
     /**
@@ -49,9 +49,9 @@ class ModelHasPermissionService
      * @return
      */
     public function paginated($num, $with = [])
-    {
-        return $this->model->with($with)->paginate($num);
-    }
+{
+    return $this->model->with($with)->paginate($num);
+}
 
     /**
      * get all of the data from the repository

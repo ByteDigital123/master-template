@@ -2,8 +2,8 @@
 
 namespace App\Http\SearchFilters\Api\ContactForm;
 
-use App\Models\ContactForm;
 use App\Http\SearchFilters\ApiSearchableTrait;
+use App\Models\ContactForm;
 
 class ContactFormSearch
 {

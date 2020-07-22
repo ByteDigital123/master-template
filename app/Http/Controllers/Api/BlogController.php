@@ -10,7 +10,6 @@ use App\Http\SearchFilters\Api\Blog\BlogSearch;
 use App\Models\Blog;
 use App\Services\BlogService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class BlogController extends Controller
 {
@@ -113,4 +112,3 @@ class BlogController extends Controller
     }
 
 }
-

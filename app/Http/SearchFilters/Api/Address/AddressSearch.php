@@ -2,8 +2,8 @@
 
 namespace App\Http\SearchFilters\Api\Address;
 
-use App\Models\Address;
 use App\Http\SearchFilters\ApiSearchableTrait;
+use App\Models\Address;
 
 class AddressSearch
 {

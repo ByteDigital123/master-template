@@ -10,7 +10,6 @@ use App\Http\SearchFilters\Api\Transaction\TransactionSearch;
 use App\Models\Transaction;
 use App\Services\TransactionService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class TransactionController extends Controller
 {
@@ -113,4 +112,3 @@ class TransactionController extends Controller
     }
 
 }
-

@@ -10,7 +10,6 @@ use App\Http\SearchFilters\Api\EmailVerification\EmailVerificationSearch;
 use App\Models\EmailVerification;
 use App\Services\EmailVerificationService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class EmailVerificationController extends Controller
 {

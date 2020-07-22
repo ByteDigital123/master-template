@@ -2,8 +2,8 @@
 
 namespace App\Http\SearchFilters\Api\Country;
 
-use App\Models\Country;
 use App\Http\SearchFilters\ApiSearchableTrait;
+use App\Models\Country;
 
 class CountrySearch
 {

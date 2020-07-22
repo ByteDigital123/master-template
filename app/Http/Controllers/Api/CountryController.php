@@ -10,7 +10,6 @@ use App\Http\SearchFilters\Api\Country\CountrySearch;
 use App\Models\Country;
 use App\Services\CountryService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class CountryController extends Controller
 {

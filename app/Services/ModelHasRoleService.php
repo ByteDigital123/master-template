@@ -2,9 +2,9 @@
 
 namespace App\Services;
 
-use App\ModelHasRole;
+use App\Models\ModelHasRole;
 
-class ModelHasRoleService
+class ModelHasRoleService extends BaseService
 {
     protected $query;
 
@@ -20,7 +20,7 @@ class ModelHasRoleService
      */
     public function count($with = [])
     {
-        return $this->model->with($with)->get();
+        return $this->model->count();
     }
 
     /**
@@ -49,9 +49,9 @@ class ModelHasRoleService
      * @return
      */
     public function paginated($num, $with = [])
-    {
-        return $this->model->with($with)->paginate($num);
-    }
+{
+    return $this->model->with($with)->paginate($num);
+}
 
     /**
      * get all of the data from the repository

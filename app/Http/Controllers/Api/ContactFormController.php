@@ -10,7 +10,6 @@ use App\Http\SearchFilters\Api\ContactForm\ContactFormSearch;
 use App\Models\ContactForm;
 use App\Services\ContactFormService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class ContactFormController extends Controller
 {

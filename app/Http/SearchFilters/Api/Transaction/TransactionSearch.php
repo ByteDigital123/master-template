@@ -2,8 +2,8 @@
 
 namespace App\Http\SearchFilters\Api\Transaction;
 
-use App\Models\Transaction;
 use App\Http\SearchFilters\ApiSearchableTrait;
+use App\Models\Transaction;
 
 class TransactionSearch
 {

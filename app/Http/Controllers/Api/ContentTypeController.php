@@ -10,7 +10,6 @@ use App\Http\SearchFilters\Api\ContentType\ContentTypeSearch;
 use App\Models\ContentType;
 use App\Services\ContentTypeService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class ContentTypeController extends Controller
 {

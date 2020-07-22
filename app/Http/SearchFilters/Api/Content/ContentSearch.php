@@ -2,8 +2,8 @@
 
 namespace App\Http\SearchFilters\Api\Content;
 
-use App\Models\Content;
 use App\Http\SearchFilters\ApiSearchableTrait;
+use App\Models\Content;
 
 class ContentSearch
 {
