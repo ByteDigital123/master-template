@@ -55,10 +55,10 @@ return [
             'visibility' => 'public',
         ],
 
-        'image' => [
+        'files' => [
             'driver' => 'local',
-            'root' => public_path() . '/images',
-            'url' => env('APP_BACKEND') . '/images',
+            'root' => public_path() . '/files',
+            'url' => env('APP_BACKEND') . '/files',
             'visibility' => 'public',
         ],
 

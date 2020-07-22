@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Website;
 
+use ByteDigital123\StoreFileContentService\StoreFileContent;
 use Illuminate\Http\Request;
-use App\Services\ImageFileService;
 use App\Http\Controllers\Controller;
 
-class ImageController extends Controller
+class FileController extends Controller
 {
 
     public function __construct()
@@ -17,7 +17,8 @@ class ImageController extends Controller
     public function createFile(Request $request)
     {
         $attributes = $request->all();
-        return (new ImageFileService($attributes['file']))->handle();
+
+        return (new StoreFileContent())->handle($attributes['file']);
     }
 
 }
