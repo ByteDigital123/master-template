@@ -17,10 +17,13 @@ class AdminUserController extends Controller
 {
 
     protected $service;
+    protected $user;
 
-    public function __construct(AdminUserService $service)
-    {
+    public function __construct(
+        AdminUserService $service
+    ){
         $this->service = $service;
+        $this->user = Auth::guard('admin_api')->user();
     }
 
     /**
@@ -65,6 +68,20 @@ class AdminUserController extends Controller
             return response()->error('This action could not be completed');
         }
 
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function updatePassword(Request $request)
+    {
+        $attributes = $request->all();
+
+        return $this->service->updatePassword($this->user, $attributes);
     }
 
     /**
