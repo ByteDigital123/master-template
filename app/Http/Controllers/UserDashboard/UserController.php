@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserDashboard\User\StoreUserRequest;
 use App\Http\Requests\UserDashboard\User\UpdateUserRequest;
 use App\Http\Resources\UserDashboard\User\UserResource;
+use App\Services\AddressService;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -13,9 +14,14 @@ use Illuminate\Support\Facades\Log;
 class UserController extends Controller
 {
     protected $service;
+    /**
+     * @var AddressService
+     */
+    private $address;
 
-    public function __construct(UserService $service)
-    {
+    public function __construct(
+        UserService $service
+    ){
         $this->service = $service;
     }
 

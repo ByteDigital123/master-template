@@ -3,13 +3,20 @@
 namespace App\Services;
 
 use App\Models\User;
+use App\Notifications\User\AccountDeleted;
 
 class UserService
 {
     protected $query;
 
-    public function __construct(User $model)
-    {
+    /**
+     * UserService constructor.
+     * @param User $model
+     * @param AddressService $address
+     */
+    public function __construct(
+        User $model
+    ){
         $this->model = $model;
     }
 
@@ -119,7 +126,10 @@ class UserService
      */
     public function delete($id)
     {
-        return $this->getById($id)->delete();
+        $user = $this->getById($id);
+        $user->notify(new AccountDeleted($user));
+        $user->delete();
+        return true;
     }
 
     /**
@@ -131,7 +141,9 @@ class UserService
     public function deleteMultiple($ids)
     {
         foreach($ids AS $id){
-            $this->getById($id)->delete();
+            $user = $this->getById($id);
+            $user->notify(new AccountDeleted($user));
+            $user->delete();
         }
 
         return true;

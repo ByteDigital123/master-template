@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42720b84-48a2-492a-9f97-b392424ab08e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/VerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/User/EmailConfirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/User/EmailConfirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/UserService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +144,7 @@
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="json" value="2" />
-          <entry key="php" value="269" />
+          <entry key="php" value="275" />
           <entry key="stub" value="5" />
           <entry key="yaml" value="1" />
         </counts>
@@ -155,7 +153,7 @@
         <counts>
           <entry key="Blade" value="3" />
           <entry key="JSON" value="2" />
-          <entry key="PHP" value="266" />
+          <entry key="PHP" value="272" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="YAML" value="1" />
         </counts>
@@ -165,7 +163,7 @@
           <entry key="dummy" value="2" />
           <entry key="gitignore" value="33" />
           <entry key="json" value="11" />
-          <entry key="php" value="2363" />
+          <entry key="php" value="2535" />
           <entry key="stub" value="7" />
         </counts>
       </usages-collector>
@@ -173,7 +171,7 @@
         <counts>
           <entry key="Blade" value="229" />
           <entry key="JSON" value="11" />
-          <entry key="PHP" value="2134" />
+          <entry key="PHP" value="2306" />
           <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
@@ -191,29 +189,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="39" column="24" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="39" selection-end-column="24" />
+            <state relative-caret-position="256">
+              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
-                <element signature="e#57#112#0#PHP" expanded="true" />
+                <element signature="e#54#90#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Services/UserService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+              <folding>
+                <element signature="e#32#52#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="75" column="76" lean-forward="true" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
+            <state relative-caret-position="291">
+              <caret line="88" column="56" lean-forward="true" selection-start-line="88" selection-start-column="56" selection-end-line="88" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminUserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-258">
+              <folding>
+                <element signature="e#44#80#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,7 +294,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/Transaction.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Models/TransactionStatus.php" />
         <option value="$PROJECT_DIR$/app/Services/AddressService.php" />
@@ -291,7 +304,6 @@
         <option value="$PROJECT_DIR$/app/Services/CountryService.php" />
         <option value="$PROJECT_DIR$/app/Services/EmailVerificationService.php" />
         <option value="$PROJECT_DIR$/app/Services/TransactionService.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BlogController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ContactFormController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ContentController.php" />
@@ -315,7 +327,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/PageController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/TransactionController.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/UserDashboard/User/UserResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php" />
         <option value="$PROJECT_DIR$/vendor/bytedigital123/pixel-boilerplate/src/Console/Commands/GeneratePolicyAppConfig.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/bytedigital123/generator/src/GeneratorFacade.php" />
@@ -331,6 +342,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/RegisterController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/VerificationController.php" />
         <option value="$PROJECT_DIR$/app/Models/Address.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Services/UserService.php" />
       </list>
     </option>
   </component>
@@ -526,26 +540,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
-              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
               <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Notifications" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="construction_discount" type="b2602c69:ProjectViewProjectNode" />
-              <item name="construction_discount" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Notifications" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -608,12 +609,12 @@
       <workItem from="1590477797737" duration="485000" />
       <workItem from="1591710757086" duration="226000" />
       <workItem from="1591956783267" duration="1918000" />
-      <workItem from="1595322429503" duration="20328000" />
+      <workItem from="1595322429503" duration="20731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183447000" />
+    <option name="totallyTimeSpent" value="183850000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -643,7 +644,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tinkerwell" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22735347" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29840142" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -682,26 +683,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/ContactFormController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#54#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#54#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/AddressController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
@@ -775,13 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-956">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -944,23 +918,11 @@
     <entry file="file://$PROJECT_DIR$/vendor/bytedigital123/generator/src/Console/Commands/GeneratorControllerFromModels.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Resources/Website/Blog/BlogResource.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-479" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Page.php">
@@ -987,21 +949,6 @@
         <state relative-caret-position="223">
           <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="39" column="24" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="39" selection-end-column="24" />
-          <folding>
-            <element signature="e#57#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Notifications/User/EmailConfirmation.php">
@@ -1042,10 +989,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="39" selection-end-column="24" />
+          <folding>
+            <element signature="e#57#112#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AddressController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserDashboard/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="e#54#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/UserService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#32#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/UserDashboard/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="75" column="76" lean-forward="true" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
+        <state relative-caret-position="291">
+          <caret line="88" column="56" lean-forward="true" selection-start-line="88" selection-start-column="56" selection-end-line="88" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdminUserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
