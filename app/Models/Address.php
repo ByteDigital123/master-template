@@ -6,10 +6,6 @@
 
 namespace App\Models;
 
-
-
-use App\Country;
-
 /**
  * Class Address
  *

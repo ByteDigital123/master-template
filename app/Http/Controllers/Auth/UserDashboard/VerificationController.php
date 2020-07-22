@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Auth\UserDashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\EmailVerification;
 use App\Notifications\User\Welcome;
 use App\Providers\RouteServiceProvider;
-use EmailVerification;
 use Illuminate\Foundation\Auth\VerifiesEmails;
 use Illuminate\Support\Facades\Log;
 
