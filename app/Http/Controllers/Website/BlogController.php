@@ -33,7 +33,18 @@ class BlogController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
+    public function show($id)
+    {
+        return new BlogResource($this->service->getById($id));
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showBySlug($slug)
     {
         return new BlogResource($this->service->getBySlug($slug));
     }

@@ -6,23 +6,22 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserDashboard\User\StoreUserRequest;
 use App\Http\Requests\UserDashboard\User\UpdateUserRequest;
 use App\Http\Resources\UserDashboard\User\UserResource;
-use App\Services\AddressService;
 use App\Services\UserService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
     protected $service;
-    /**
-     * @var AddressService
-     */
-    private $address;
+
+    private $user;
 
     public function __construct(
         UserService $service
     ){
         $this->service = $service;
+        $this->user = Auth::guard('user_api')->user();
     }
 
     /**
@@ -85,6 +84,20 @@ class UserController extends Controller
             Log::info($e->getMessage());
             return response()->error('This action could not be completed - ' . $e->getMessage());
         }
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function updatePassword(Request $request)
+    {
+        $attributes = $request->all();
+
+        return $this->service->updatePassword($this->user, $attributes);
     }
 
     /**

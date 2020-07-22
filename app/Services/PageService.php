@@ -74,6 +74,18 @@ class PageService
         return $this->model->with($with)->find($id);
     }
 
+
+    /**
+     * get a single row of data
+     *
+     * @param integer $id
+     * @return
+     */
+    public function getBySlug($slug)
+    {
+        return $this->model->where('slug', $slug)->first();
+    }
+
     /**
      * return the data between specific dates
      *

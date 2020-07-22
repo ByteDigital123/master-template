@@ -10,6 +10,7 @@ use App\Http\SearchFilters\Api\Content\ContentSearch;
 use App\Models\Content;
 use App\Services\ContentService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class ContentController extends Controller
 {

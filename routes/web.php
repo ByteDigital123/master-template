@@ -30,7 +30,7 @@ Route::group(['prefix' => 'auth'], function (){
 
 // BLOGS
 Route::get('/blogs', 'Website\BlogController@index');
-Route::get('/blogs/{slug}', 'Website\BlogController@show');
+Route::get('/blogs/{slug}', 'Website\BlogController@showBySlug');
 
 // CONTACT FORMS
 Route::post('/contact-form', 'Website\ContactFormController@store');
@@ -40,6 +40,6 @@ Route::get('countries', 'Api\CountryController@index');
 
 // PAGES
 Route::get('/pages', 'Website\PageController@index');
-Route::get('/pages/{slug}', 'Website\PageController@show');
+Route::get('/pages/{slug}', 'Website\PageController@showBySlug');
 
 
