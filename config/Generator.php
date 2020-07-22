@@ -6,13 +6,25 @@ return [
     // dont want to generate
     // files for
     'legacyModels' => [
+        'Address',
         'AdminUser',
+        'Blog',
+        'ContactForm',
+        'Content',
+        'ContentType',
+        'Country',
+        'EmailVerification',
+        'ModelHasPermission',
+        'ModelHasRole',
         'Page',
         'Permission',
+        'PermissionGroup',
         'Role',
-        'FileModel',
-        'Sandbox',
+        'Transaction',
+        'TransactionStatus',
         'User',
+        'OauthAccessToken',
+        'Sandbox',
         'BaseModel',
     ],
 
